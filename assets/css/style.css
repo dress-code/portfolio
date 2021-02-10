@@ -280,7 +280,8 @@ h1, h2, h3, p {
 .projectsContainer {
     flex-wrap: wrap;
     flex-direction: row;
-    max-width: 80vw;
+    width: 80vw;
+    margin-left: 10vw;
     align-content: flex-start;
     padding: 50px 0;
 }
