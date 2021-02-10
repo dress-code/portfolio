@@ -1,0 +1,106 @@
+.slide-right {
+	-webkit-animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 1.5s;
+}
+
+.slide-left {
+	-webkit-animation: slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation-delay: 1.5s;
+}
+
+.fade-pink {
+    animation: fade-pink 1.5s both;
+    animation-delay: 1.7s;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in 1s both;
+}
+
+.delay {
+    animation-delay: 2.75s;
+}
+
+.condense {
+    animation: condense 2s both;
+    animation-delay: 1.5s;
+}
+
+.fade-out {
+    animation: fade-in 1.5s both;
+    animation-direction: reverse;
+    animation-delay: 3.75s;
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(24px);
+              transform: translateX(24px);
+    }
+  }
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(24px);
+              transform: translateX(24px);
+    }
+  }
+
+  @-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-24px);
+              transform: translateX(-24px);
+    }
+  }
+  @keyframes slide-left {
+    0% {
+           
+      -webkit-transform: translateX(0);
+              transform: translateX(0) scaleX(-1);
+    }
+    100% {
+      -webkit-transform: translateX(-24px);
+              transform: translateX(-24px) scaleX(-1);
+    }
+  }
+
+  @-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-27.5px);
+              transform: translateX(-27.5px);
+    }
+  }
+
+  @keyframes fade-pink {
+	to { color: #EEE1B8; }
+  }
+
+  @keyframes condense {
+    from { letter-spacing: 16px; }
+    to { letter-spacing: 9px; 
+         color: #EEE1B8; }
+  }
+
+ @keyframes fade-in {
+      from {opacity: 0;}
+      to {opacity: 1;}
+  }
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Anna Jacobsen</title>
+      <link rel="stylesheet" href="./assets/css/style.css">
+      <link rel="stylesheet" href="./assets/css/animations.css">
+      <link rel="stylesheet" href="https://use.typekit.net/ukb6jch.css">
+    <link rel="icon" href="./assets/images/block-logo.svg">
+  </head>
+  <body>
+
+      <div id="cover" class="fade-out">
+          <div id="branding">
+              <h1 class="fade-in delay u">U</h1>
+              <div id="name">
+                  <h1 class="slide-right">A<span class="fade-pink">N</span></h1>
+                  <h1 class="slide-left">A<span class="fade-pink">N</span></h1>
+              </div>
+              
+              <h1 class="fade-in delay x">X</h1>
+              <h3 class="condense">JACOBSEN</h3>
+          </div>
+      </div>
+
+      <div id="thankYou">
+          <div id="thankYouBox">
+              <h2 id="thankYouTitle"></h2>
+              <p>It might take a day or two depending on school and work, but I will get back to you as soon as possible! Thanks for stopping by!</p>
+              <p class="signature">- Anna Jacobsen</p>
+          </div>
+      </div>
+
+        <div id="content">
+            <div id="0" class="current section hidden">
+                <div class="homeText">
+                   <div class="projectsContainer contentContainer" id="projectsContainer"></div>
+                </div>
+            </div>
+
+            <div id="1" class="section hidden">
+                <div class="contentContainer">
+                        <div id="imageContainer">
+                            <img src="assets/images/me.jpg" id="bioPic" alt="An image of Anna Jacobsen sitting in an orange hammock."/>
+                            <hr/>
+                        </div>
+                        <p id="hp">Hi, I am Anna Jacobsen. I am a first-year master's student in the field of Human-Computer Interaction at the Rochester Institute of Technology. I am interested in how design, steeped in anthropological understanding, affects the emotions or thoughts of users. People shouldn't feel like they took a ferry ride with Kharon after using your application. </p>
+                        <p>In my spare time, you can find me rowing, reading, hiking, sketching, volunteering, baking chocolate cake, watching the Clone Wars, or hanging out with my cats Jack + Ada. I like having a flexible plan and appreciate a good sense of humor while I work.</p>
+                </div>
+            </div>
+        </div>
+
+            <div id="2" class="section hidden">
+                <div class="contentContainer contactSection">
+                    <h2 class="formTitle">Connect With Me</h2>
+                    <div class="form">
+                        <form id="contactForm" action="https://formspree.io/mpzzvdke" onsubmit="return validateContact();" method="POST">
+                            <input type="hidden" name="_subject" value="annajacobsen.info Website Contact" />
+                            <label for="_gotcha"></label>
+                            <input type="text" name="_gotcha" id="_gotcha" style="display:none" />
+                            <input type="hidden" name="_next" value="https://people.rit.edu/~aj4693/index.html" />
+
+                            <label for="firstName">First Name</label>
+                            <input type="text" name="first name" id="firstName" />
+                            <div id="fnameError" class="invalid"></div>
+
+                            <label for="lastName">Last Name</label>
+                            <input type="text" name="last name" id="lastName" />
+                            <div id="lnameError" class="invalid"></div>
+
+                            <label for="emailAddress">E-mail Address</label>
+                            <input type="text" name="email" id="emailAddress" />
+                            <div id="emailError" class="invalid"></div>
+
+                            <label for="messageBody">Message</label>
+                            <textarea name="message" id="messageBody"></textarea>
+                            <div id="messageError" class="invalid"></div>
+
+                            <input class="submitButton" type="submit" value="SEND" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <nav class="header">
+          <!-- <img src="assets/images/logo.svg" alt="Anna's logo." id="headerLogo"/> -->
+          <ul id="mainNav">
+              <li class="selected" onClick="changeSection(0)">PROJECTS</li>
+              <li onClick="changeSection(1)">ABOUT</li>
+              <li onClick="changeSection(2)">CONTACT</li>
+              <li><a class="topNavDownload" href="./assets/files/Jacobsen_Resume.pdf" target="_blank">RESUMÉ</a></li>
+          </ul>
+      </nav>
+
+      <nav id="mobileNav">
+          <ul>
+              <li onClick="changeSection(0)">PROJECTS</li>
+              <li onClick="changeSection(1)">ABOUT</li>
+              <li onClick="changeSection(2)">CONTACT</li>
+              <li><a class="topNavDownload" href="./assets/files/Jacobsen_Resume.pdf" target="_blank">RESUMÉ</a></li>
+          </ul>
+      </nav>
+
+      <div id="nav-icon4">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <script src="./assets/js/functions.js"></script>
+  </body>
+</html>
