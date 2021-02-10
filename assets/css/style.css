@@ -269,7 +269,6 @@ h1, h2, h3, p {
 }
 
 .contentContainer {
-    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -281,6 +280,7 @@ h1, h2, h3, p {
 .projectsContainer {
     flex-wrap: wrap;
     flex-direction: row;
+    max-width: 80vw;
     align-content: flex-start;
     padding: 50px 0;
 }
@@ -301,6 +301,10 @@ hr {
     border: 1px solid #d4a50b;
     margin: 0 0 8px 0;
     width: 75%;
+}
+
+.contactSection {
+    width: 100%;
 }
 
 .formTitle {
