@@ -177,9 +177,9 @@ span.small {
 }
 
 .itemBlock {
-    width: 232px;
-    height: 564px;
-    margin: 64px;
+    width: 164px;
+    height: 272px;
+    margin: 32px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -199,7 +199,7 @@ span.small {
 
 .mcp {
     background-image: url("../images/biker-box.svg");
-    align-self: flex-end;
+    align-self: flex-start;
 }
 .mcp:hover {
     background-image:url("../images/biker-box-color.svg");
@@ -212,3 +212,22 @@ span.small {
     background-image:url("../images/virago-box-color.svg");
 }
 
+@media screen and (min-width:1200px) {
+    .itemBlock {
+        width: 200px;
+        height: 364px;
+        margin: 48px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .itemBlock {
+        width: 232px;
+        height: 564px;
+        margin: 64px;
+    }
+
+    .mcp {
+        align-self: flex-end;
+    }
+}
