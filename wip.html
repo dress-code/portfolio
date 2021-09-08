@@ -18,17 +18,6 @@
     <a href="#">Foster Dogs</a>
 </nav>
 
-<!-- <div class="blockBackground">
-    <div class="squareDiv">
-        <div class="square"></div>
-        <div class="square2"></div>
-    </div>
-    <div class="squareDiv">
-        <div class="square"></div>
-        <div class="square2"></div>
-    </div>
-</div> -->
-
 <div class="openingText">
 
         <div class="movingTextWrap">
@@ -73,27 +62,43 @@
             </div>
     </div>
 
-    <svg class="divider" width="100%" height="auto" viewBox="0 0 1440 674" fill="none">
+    <!-- <svg class="divider" width="100%" height="auto" viewBox="0 0 1440 674" fill="none">
         <path d="M0 577.205L360 674V97L0 0.204529V577.205Z" fill="#AD5D4E"/>
         <path d="M720 577.205L1080 674V97L720 0.204529V577.205Z" fill="#AD5D4E"/>
         <path d="M720 577.205L360 674V97L720 0.204529V577.205Z" fill="#451E17"/>
         <path d="M1440 577.205L1080 674V97L1440 0.204529V577.205Z" fill="#451E17"/>
+    </svg> -->
+
+   <!-- <svg class="divider" width="100%" height="auto" viewBox="0 0 1440 999" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1440 999L359.875 685.375L830 313L1440 469V999Z" fill="#1A0704"/>
+<path d="M0 586.927L360 685.354V98.6311L0 0.20454V586.927Z" fill="#AD5D4E"/>
+<path d="M720 586.927L1080 685.354V98.6311L720 0.20454V586.927Z" fill="#AD5D4E"/>
+<path d="M720 586.927L360 685.354V98.6311L720 0.20454V586.927Z" fill="#451E17"/>
+<path d="M1440 586.927L1080 685.354V98.6311L1440 0.20454V586.927Z" fill="#451E17"/>
+</svg> -->
+
+<svg class="divider" width="100%" height="auto" viewBox="0 0 1440 686" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 586.927L360 685.354V98.6311L0 0.204529V586.927Z" fill="#585858"/>
+    <path d="M720 586.927L1080 685.354V98.6311L720 0.204529V586.927Z" fill="#585858"/>
+    <path d="M720 586.927L360 685.354V98.6311L720 0.204529V586.927Z" fill="#313131"/>
+    <path d="M1440 586.927L1080 685.354V98.6311L1440 0.204529V586.927Z" fill="#313131"/>
     </svg>
 </div>
 
 <div class="main">
-    <!--<div class="triangle"></div>-->
 
     <section id="work">
-        <h1>Work</h1>
+        <div class="blocksDiv">
+            <div class="itemBlock botnine"></div>
+            <div class="itemBlock mcp"></div>
+            <div class="itemBlock virago"></div>
+        </div>
     </section>
 
     <section id="about">
-        <h1>About</h1>
     </section>
 
     <section id="foster-dogs">
-        <h1>Foster Dogs</h1>
     </section>
 
     <footer>
@@ -104,6 +109,27 @@
 <script>
     window.addEventListener('mousemove', handleMouseMove);
     window.addEventListener('resize', handleWindowResize);
+
+    
+
+    /*window.onload = () => {
+    var blocks = document.getElementsByClassName("itemBlock");
+    console.log(blocks);
+
+        for(var i = 0; i < blocks.length; i++){
+            console.log(blocks[i]);
+            blocks[i].addEventListener("mouseover", function() {
+            this.style.height = "372px";
+         });
+        }  
+
+        for(var i = 0; i < blocks.length; i++){
+            console.log(blocks[i]);
+            blocks[i].addEventListener("mouseout", function() {
+            this.style.height = "364px";
+         });
+        }  
+    };  */
 
     const spansSlow = document.querySelectorAll('.spanSlow');
     const spansFast = document.querySelectorAll('.spanFast');
