@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./assets/css/wip-style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -17,6 +17,8 @@
     <a href="#">Resumé</a>
     <a href="#">Foster Dogs</a>
 </nav>
+
+
 
 <div class="openingText">
 
@@ -89,20 +91,41 @@
 
     <section id="work">
         <div class="blocksDiv">
-            <div class="itemBlock botnine"></div>
-            <div class="itemBlock mcp"></div>
-            <div class="itemBlock virago"></div>
+            <div class="itemBlock mcp tooltip">
+                <div class="tooltiptext">
+                    <h3>Monroe County Parks</h3>
+                    <h4>Class Project</h4>
+                    <h4>--</h4>
+                    <h4>Illustration Example</h4>
+                </div>
+            </div>
+            <div class="itemBlock botnine tooltip">
+                <div class="tooltiptext">
+                    <h3>Bot-9</h3>
+                    <h4>Dick's Sporting Goods</h4>
+                    <h4>Summer 2021</h4>
+                    <h4>Case Study Example</h4>
+                </div>
+            </div>
+            <div class="itemBlock virago tooltip">
+                <div class="tooltiptext">
+                    <h3>Virago</h3>
+                    <h4>Personal Project</h4>
+                    <h4>Ongoing</h4>
+                    <h4>UI Design Example</h4>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="about">
-        <p>Hi! I am Anna Jacobsen, a master's student in the field of Human-Computer Interaction (HCI) at the Rochester Institute of Technology. I am interested in how the design of systems and processes, steeped in anthropological understanding, affect the emotions and productivity of users. </p>
+        <p>I am interested in how the design of technological systems and processes affect the emotions and productivity of the people they are designed for. </p>
 
-        <p>In my spare time, you can find me rowing, reading, hiking, sketching, volunteering, baking chocolate cake, watching the Clone Wars, or hanging out with my cats Jack + Ada. I like having a flexible plan and appreciate a good sense of humor while I work.</p>
+        <p>In my spare time, you can find me rowing, reading, hiking, volunteering, or baking.</p>
     </section>
 
     <section id="resume">
-        <svg width="100%" height="455" viewBox="0 0 655 455" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!--<svg width="100%" height="455" viewBox="0 0 655 455" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="pathway" d="M44 176L87.6958 165.97L635.599 317.451L590.148 327.744L44 176Z" fill="#313131"/>
             <path class="pathway" d="M602 338L566 319L205.732 418.208L243.487 437.47L602 338Z" fill="#313131"/>
             <path class="pathway" d="M425.75 70.6252L394 61.0002L31 160L68.4872 171.47L425.75 70.6252Z" fill="#313131"/>
@@ -118,7 +141,38 @@
             <path class="secondBlock" d="M0.825195 164.558L48.4127 177.555V100.078L0.825195 87.0803V164.558Z" fill="#585858"/>
             <path class="secondBlock" d="M95.9995 164.558L48.412 177.555V100.078L95.9995 87.0803V164.558Z" fill="#313131"/>
             <path class="secondBlock" d="M48.3464 76.6068L96 87.0803L48.3464 100.105L0.692871 87.0803L48.3464 76.6068Z" fill="#8A8A8A"/>
-            </svg>      
+            </svg>    -->
+            
+            <img id="resumeSVG" src="assets/images/Resume_Fall_2021.svg"/>
+    </section>
+
+    <section id="fosterDogs">
+        <div class="dogs">
+            <div class="itemBlock major tooltip">
+                <div class="tooltiptext">
+                    <h3>Major</h3>
+                    <h4>Pit Bull</h4>
+                    <h4>Saved from euthanasia.</h4>
+                    <h4>Adopted by a firefighter.</h4>
+                </div>
+            </div>
+            <div class="itemBlock athena tooltip">
+                <div class="tooltiptext">
+                    <h3>Athena</h3>
+                    <h4>German Shepherd</h4>
+                    <h4>Lost, saved from euthanasia.</h4>
+                    <h4>Reunited with her owner.</h4>
+                </div>
+            </div>
+            <div class="itemBlock buddy tooltip">
+                <div class="tooltiptext">
+                    <h3>Buddy</h3>
+                    <h4>Labrador Retriever/Pit Bull</h4>
+                    <h4>Saved from euthanasia.</h4>
+                    <h4>Currently fostering and training.</h4>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -138,11 +192,10 @@
 <script>
     window.addEventListener('mousemove', handleMouseMove);
     window.addEventListener('resize', handleWindowResize);
-
-    
+    let mousePosX, mousePosY;
 
     window.onload = () => {
-    var firstBlock = document.getElementsByClassName("firstBlock"),
+    /*var firstBlock = document.getElementsByClassName("firstBlock"),
     thirdBlock = document.getElementsByClassName("thirdBlock"),
     secondBlock = document.getElementsByClassName("secondBlock"),
     fourthBlock = document.getElementsByClassName("fourthBlock");
@@ -209,7 +262,26 @@
                 fourthBlock[i].style.fill = "#101010";
             }
          });
-        }  
+        }  */
+        
+        
+        let tooltips = document.getElementsByClassName("tooltip");
+
+       // document.onmousemove = setMousePosition;
+
+        for(var i = 0; i < tooltips.length; i++){
+            tooltips[i].addEventListener("mousemove", function(e){
+                let text = Array.from(this.children).filter(isToolTipText);
+                text[0].style.left = mousePosX + 36 + 'px';
+                console.log(mousePosY);
+                text[0].style.top = mousePosY - 548 + 'px';
+                text[0].style.visibility = "visible";
+            });
+            tooltips[i].addEventListener("mouseout", function(e){
+                let text = Array.from(this.children).filter(isToolTipText);
+                text[0].style.visibility = "hidden";
+            });
+        }
     };  
 
     const spansSlow = document.querySelectorAll('.spanSlow');
@@ -218,7 +290,10 @@
     let width = window.innerWidth;
 
     function handleMouseMove(e) {
-        let normalizedPosition = e.pageX / (width/2) - 1;
+        mousePosX = e.pageX;
+        mousePosY = e.pageY;
+        
+            let normalizedPosition = mousePosX / (width/2) - 1;
         let speedSlow = 100 * normalizedPosition;
         let speedFast = 200 * normalizedPosition;
         spansSlow.forEach((span) => {
@@ -227,10 +302,20 @@
         spansFast.forEach((span) => {
             span.style.transform = `translate(${speedFast}px)`
         })
+        
     }
     //we need to recalculate width when the window is resized
     function handleWindowResize() {
         width = window.innerWidth;
+    }
+
+    /*function setMousePosition(e) {
+        mousePos = (window.Event) ? e.pageX : event.clientX; 
+        /*console.log(mousePos);
+    }*/
+
+    function isToolTipText(value){
+        return value.classList.contains("tooltiptext");
     }
 </script>
 </body>
