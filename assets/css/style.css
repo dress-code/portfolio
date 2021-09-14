@@ -258,13 +258,13 @@ span.small {
     background-image: url("../images/Major.svg");
 }
 .athena {
-    background-image: url("../images/Athena.svg");
+    background-image: url("../images/athena.svg");
 } 
 .athena:hover {
     background-image: url("../images/athena2.svg");
 }
 .buddy {
-    background-image: url("../images/Buddy.svg");
+    background-image: url("../images/buddy.svg");
 }
 .buddy:hover {
     background-image: url("../images/buddy2.svg");
