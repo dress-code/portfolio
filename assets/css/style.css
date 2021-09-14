@@ -297,8 +297,8 @@ span.small {
 @media screen and (min-width:1200px) {
     
     #resumeSVG {
-        width: 75%;
-        margin: 0 12.5%;
+        width: 80%;
+        margin: 0 10%;
     }
     
     #about > p {
