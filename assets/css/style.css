@@ -260,6 +260,9 @@ span.small {
 .athena {
     background-image: url("../images/Athena.svg");
 } 
+.athena:hover {
+    background-image: url("../images/athena2.svg");
+}
 .buddy {
     background-image: url("../images/Buddy.svg");
 }
