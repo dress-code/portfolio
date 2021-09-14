@@ -290,11 +290,17 @@ span.small {
 }
 
 #resumeSVG {
-    width: 75%;
-    margin: 0 12.5%;
+    width: 100%;
+    margin: 0;
 }
 
 @media screen and (min-width:1200px) {
+    
+    #resumeSVG {
+        width: 75%;
+        margin: 0 12.5%;
+    }
+    
     #about > p {
         width: 33vw;
     }
