@@ -118,6 +118,11 @@ footer > div > p {
     line-height: 14px;
 }
 
+footer > div > img {
+    height: 32px;
+    width: auto;
+}
+
 /*-------------------------------*/
 
 
