@@ -16,7 +16,7 @@ body {
 }
 
 a {
-    color: white;
+    color: #363945;
     text-decoration: none;
 }
 a:hover {
@@ -132,12 +132,12 @@ footer > div > p {
 }
 
 .left {
-    color: #C35A1F;
+    color: #363945;
     transform: skew(0deg, -15deg);
 }
 
 .right {
-    color: #F57731;
+    color: #797F98;
     transform: skew(0deg, 15deg);
 }
 .left .content {
