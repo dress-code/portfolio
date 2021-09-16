@@ -82,7 +82,7 @@ p {
 }
 
 #headerNav > a:hover {
-    color: white;
+    color: #F57731;
     transition: color ease 500ms;
 }
 
