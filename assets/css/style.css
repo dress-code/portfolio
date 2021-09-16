@@ -8,7 +8,7 @@ path {
 }
 
 body {
-    background-color: #6E7CAE;
+    background-color: #DADFEF;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #EEEEEE;
@@ -72,7 +72,6 @@ p {
 #headerNav > a {
     font-size: 2vw;
     padding: 24px 0;
-    color: #8A8A8A;
     text-transform: uppercase;
     transform: skew(
 180deg,
@@ -189,7 +188,7 @@ span.small {
 
 .main > section {
     height: auto;
-    background-color: #18191C;
+    background-color: #999EB1;
     z-index: 5;
 }
 
