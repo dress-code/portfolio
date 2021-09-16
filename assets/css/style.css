@@ -132,12 +132,12 @@ footer > div > p {
 }
 
 .left {
-    color: #18191C;
+    color: #6B7189;
     transform: skew(0deg, -15deg);
 }
 
 .right {
-    color: #363D52;
+    color: #999EB1;
     transform: skew(0deg, 15deg);
 }
 .left .content {
