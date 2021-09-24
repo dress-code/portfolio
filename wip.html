@@ -139,7 +139,7 @@
                 let text = Array.from(this.children).filter(isToolTipText);
                 text[0].style.left = mousePosX + 36 + 'px';
                 console.log(mousePosY);
-                text[0].style.top = mousePosY + 'px';
+                text[0].style.top = mousePosY - 548 + 'px';
                 text[0].style.visibility = "visible";
             });
             tooltips[i].addEventListener("mouseout", function(e){
