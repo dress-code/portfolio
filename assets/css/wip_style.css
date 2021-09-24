@@ -217,6 +217,7 @@ footer > div > img {
     .itemBlock {
         width: 232px;
         height: 364px;
+        margin: 12px;
     }
 }
 
@@ -224,12 +225,13 @@ footer > div > img {
     .itemBlock {
         width: 232px;
         height: 564px;
+        margin: 32px;
     }
 }
 
 @media screen and (min-width:1800px) {
     .itemBlock {
         height: 692px;
-        margin: 24px;
+        margin: 64px;
     }
 }
