@@ -8,7 +8,7 @@ path {
 }
 
 body {
-    background-color: #DADFEF;
+    background-color: #FBFCFF;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #FBFCFF;
@@ -235,11 +235,6 @@ footer > div > img {
     .itemBlock {
         width: 232px;
         height: 364px;
-        margin: 48px;
-    }
-
-    .botnine {
-        align-self: flex-start;
     }
 }
 
@@ -247,13 +242,11 @@ footer > div > img {
     .itemBlock {
         width: 232px;
         height: 564px;
-        margin: 64px;
     }
 }
 
 @media screen and (min-width:1800px) {
     .itemBlock {
         height: 692px;
-        margin: 72px;
     }
 }
