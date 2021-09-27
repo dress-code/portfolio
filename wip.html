@@ -142,7 +142,8 @@
 
         for(var i = 0; i < tooltips.length; i++){
             if(tooltips[i].classList.contains("infoBox")){
-               tooltips[i].style.position = 'fixed';
+               let text = Array.from(this.children).filter(isToolTipText);
+               text[0].style.position = 'fixed';
             }
             
             tooltips[i].addEventListener("mousemove", function(e){
