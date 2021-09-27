@@ -55,11 +55,13 @@ p {
   .tooltiptext > h3 {
       font-size: 16px;
       padding-top: 8px;
+      padding-left: 4px;
   }
 
   .tooltiptext > h4 {
       font-size: 12px;
       padding-bottom: 4px;
+      padding-left: 4px;
   }
 
 
