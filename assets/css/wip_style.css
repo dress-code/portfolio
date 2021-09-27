@@ -9,7 +9,7 @@ path {
 
 body {
     background-color: #FBFCFF;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 16px;
     color: #FBFCFF;
     cursor: url("../images/cursor.svg"), auto;
@@ -79,7 +79,7 @@ p {
 #headerNav > a {
     font-size: 2vw;
     padding: 0 0 24px 0;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 #headerNav > a:hover {
