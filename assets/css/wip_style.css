@@ -34,6 +34,15 @@ h1 {
 p {
     padding-bottom: 24px;
 }
+
+#infoBox {
+    background-image: url("../images/info_box.svg");
+    position: fixed;
+    bottom: 36px;
+    left: 36px;
+    width: 64px;
+    height: 64px;
+}
   
   /* Tooltip text */
   .tooltiptext {
