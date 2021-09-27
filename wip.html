@@ -141,6 +141,10 @@
         let tooltips = document.getElementsByClassName("tooltip");
 
         for(var i = 0; i < tooltips.length; i++){
+            if(tooltips[i].classList.contains("infoBox"){
+               console.log("infoBox hover");
+            }
+            
             tooltips[i].addEventListener("mousemove", function(e){
                 let text = Array.from(this.children).filter(isToolTipText);
                 text[0].style.left = mousePosX + 24 + 'px';
