@@ -38,7 +38,6 @@ p {
   /* Tooltip text */
   .tooltiptext {
     visibility: hidden;
-    transition: visibility ease 250ms;
     width: auto;
     height: auto;
     background-color: #FBFCFF;
