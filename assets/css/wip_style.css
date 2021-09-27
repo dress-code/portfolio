@@ -53,13 +53,13 @@ p {
 }
 
   .tooltiptext > h3 {
-      font-size: 16px;
-      padding-top: 8px;
+      font-size: 20px;
       padding-left: 4px;
   }
 
   .tooltiptext > h4 {
-      font-size: 12px;
+      font-size: 16px;
+      font-style: italic;
       padding-bottom: 4px;
       padding-left: 4px;
   }
