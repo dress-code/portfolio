@@ -7,6 +7,15 @@ path {
     transition: fill ease-in .25s;
 }
 
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.current {
+    display: block;
+}
+
 body {
     background-color: #FBFCFF;
     font-family: 'Barlow Condensed', sans-serif;
