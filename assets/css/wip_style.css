@@ -41,7 +41,7 @@ p {
     background-repeat: no-repeat;
     position: fixed;
     bottom: 36px;
-    left: 36px;
+    right: 36px;
     width: 64px;
     height: 64px;
 }
