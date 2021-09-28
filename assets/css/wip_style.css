@@ -28,8 +28,23 @@ a {
     color: #797F98;
     text-decoration: none;
 }
-a:hover {
+
+a:hover, .controls > .enabled {
     cursor: url("../images/hover_cursor.svg"), auto;
+}
+
+.controls {
+    position: fixed;
+    bottom: 40px;
+    width: 264px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: calc(50% - 132px);
+}
+
+.controls > h1 {
+    color: #363945;
 }
 
 h1 {
