@@ -45,6 +45,10 @@ p {
     width: 64px;
     height: 64px;
 }
+
+.infoBoxToolTipText > img {
+    width: 100px;
+}
   
   /* Tooltip text */
   .tooltiptext {
@@ -59,7 +63,7 @@ p {
     z-index: 1;
   }
 
-.tooltiptext > img {
+.tooltiptext > img, .tooltiptext > p {
     width: 264px;
 }
 
@@ -74,7 +78,6 @@ p {
       padding-bottom: 4px;
       padding-left: 4px;
   }
-
 
 #headerNav{
     position: fixed;
