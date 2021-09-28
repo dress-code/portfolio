@@ -193,6 +193,26 @@
     function isToolTipText(value){
         return value.classList.contains("tooltiptext");
     }
+    
+    function changeSection(newSectionIndex){
+        console.log("fired function");
+        let newSection = $(newSectionIndex);
+        let oldSection = $$("current")[0];
+        oldSection.classList.remove("current")
+        oldSection.classList.add("hidden");
+        newSection.classList.remove("hidden");
+        newSection.classList.add("current");
+        newSection.classList.add('fade-in');
+    }
+
+    /* Shortcuts */
+    function $(id){
+        return document.getElementById(id);
+    }
+
+    function $$(className){
+        return document.getElementsByClassName(className);
+    }
 </script>
 </body>
 </html>
