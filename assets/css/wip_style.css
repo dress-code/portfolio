@@ -48,6 +48,7 @@ p {
 
 .infoBox:hover {
     background-image: url(../images/info_box_color.svg);
+    cursor: url("../images/hover_cursor.svg"), auto;
 }
 
 #infoBoxToolTipText > img {
