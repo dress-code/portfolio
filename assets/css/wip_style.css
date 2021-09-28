@@ -67,6 +67,10 @@ p {
     width: 264px;
 }
 
+.tooltiptext > p {
+    padding-bottom: 4px;
+}
+
   .tooltiptext > h3 {
       font-size: 20px;
       padding-left: 4px;
