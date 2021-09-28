@@ -29,9 +29,9 @@
 </nav> -->
     
     <div class="controls">
-        <img class="controlBack disabled" src="./assets/images/icons/back_icon_disabled.svg" alt="Back button disabled. Cannot go back any more."/>
+        <img id="backButton" class="disabled" src="./assets/images/icons/back_icon_disabled.svg" alt="Back button disabled. Cannot go back any more."/>
         <h1>PROJECTS</h1>
-        <img class="controlForward enabled" src="./assets/images/icons/forward_icon.svg" alt="Next section." />
+        <img id="forwardButton" class="enabled" src="./assets/images/icons/forward_icon.svg" alt="Next section." />
     </div>
     
 <div class="infoBox tooltip">
@@ -155,6 +155,22 @@
                 text[0].style.visibility = "hidden";
             });
         }
+        
+        $("backButton").addEventListener("click", function(){
+            if(this.classList.contains("enabled"){
+               console.log("Back Button Press");
+            }else{
+               console.log("Back button disabled.");
+            }
+        });
+    
+        $("forwardButton").addEventListener("click", function(){
+            if(this.classList.contains("enabled"){
+               console.log("Forward Button Press");
+            }else{
+               console.log("Forward button disabled.");
+            }
+        });
     };  
 
     const spansSlow = document.querySelectorAll('.spanSlow');
