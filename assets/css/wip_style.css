@@ -46,7 +46,7 @@ p {
     height: 64px;
 }
 
-.infoBoxToolTipText > img {
+#infoBoxToolTipText > img {
     width: 100px;
 }
   
