@@ -239,11 +239,18 @@
         sectionNum = $("sectionNumber");
         
         
-        
+        /* Create the new title and index for display. */
         let x = document.createTextNode(""),
             sectionNumContent = document.createTextNode(newSectionIndex + 1);
-        console.log(sectionNumContent);
         
+        /* Change the title of the section*/
+        //title.removeChild(title.childNodes[0]);
+        
+        /* Change section number*/
+        sectionNum.removeChild(sectionNum.childNoes[0]);
+        sectionNum.appendChild(sectionNumContent);
+        
+        /* Change the section content*/
         oldSection.classList.remove("current")
         oldSection.classList.add("hidden");
         newSection.classList.remove("hidden");
