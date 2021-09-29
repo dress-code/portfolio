@@ -180,7 +180,7 @@ footer > div > img {
 
 .blocksDiv {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     justify-content: center;
     align-items: center;
     width: 100%;
