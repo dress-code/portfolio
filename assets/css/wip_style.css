@@ -97,7 +97,11 @@
 .projectCallout {
     padding: 48px;
     font-size: 48px;
-    width: 100%;
+    width: calc(100% - 96px);
+}
+
+.projectCallout + img {
+    width: 100%
 }
 
 .projectHero {
