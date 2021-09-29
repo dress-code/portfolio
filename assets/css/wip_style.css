@@ -66,6 +66,24 @@
     z-index: 101;
 }
 
+.projectSection {
+    width: 100%;
+    display: flex;
+}
+
+.projectTitle {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectTitle > h1, .projectTitle > h2 {
+    color: #000000;
+}
+
 /* General Styles -------------------------------- */
 .main > section.hidden {
     display: none;
