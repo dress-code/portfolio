@@ -43,7 +43,7 @@ a:hover, .controls > .enabled {
     left: calc(50% - 132px);
 }
 
-.controls > h1 {
+.controls > div > h1 + h5 {
     color: #363945;
 }
 
