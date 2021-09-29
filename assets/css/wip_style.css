@@ -87,6 +87,8 @@
 
 .projectHero {
     background-image: url("../images/mockups/virago_mockup_thumbnail.png");
+    height: 100%;
+    width: 50%;
 }
 
 /* General Styles -------------------------------- */
