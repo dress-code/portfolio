@@ -81,8 +81,8 @@
     align-items: center;
 }
 
-.projectTitle > h1, .projectTitle > h2 {
-    color: #000000;
+.projectTitle > h1, .projectTitle > h2, .projectCallout {
+    color: ##363945;
 }
 
 .projectTitle > h1 {
@@ -95,7 +95,6 @@
 }
 
 .projectCallout {
-    color: #000000;
     padding: 24px;
     font-size: 52px;
     width: 100%;
