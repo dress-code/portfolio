@@ -208,7 +208,7 @@
                     currentIndex = parseInt(currentIndex, 10) + 1;
                     
                     /*If the current index is now at the max value, disable the forward button.*/
-                    if( currentIndex === ( _SECTIONS.length ) ) {
+                    if( currentIndex === ( _SECTIONS.length - 1 ) ) {
                         this.src = "./assets/images/icons/forward_icon_disabled.svg";
                         this.classList.add("disabled");
                     }
