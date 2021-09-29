@@ -31,7 +31,7 @@
     <div class="controls">
         <img id="backButton" class="disabled" src="./assets/images/icons/back_icon_disabled.svg" alt="Back button disabled. Cannot go back any more."/>
         <h1>PROJECTS</h1>
-        <img id="forwardButton" class="enabled" src="./assets/images/icons/forward_icon.svg" alt="Next section." />
+        <img id="forwardButton" class="" src="./assets/images/icons/forward_icon.svg" alt="Next section." />
     </div>
     
 <div class="infoBox tooltip">
@@ -159,7 +159,7 @@
         }
         
         $("backButton").addEventListener("click", function(){
-            if(this.classList.contains("enabled")){
+            if(!this.classList.contains("disabled")){
                console.log("Back Button Press");
                 
                 let currentIndex = $$("current")[0].id;
@@ -177,7 +177,7 @@
         });
     
         $("forwardButton").addEventListener("click", function(){
-            if(this.classList.contains("enabled")){
+            if(!this.classList.contains("disabled")){
                console.log("Forward Button Press");
                 
                 let currentIndex = $$("current")[0].id,
