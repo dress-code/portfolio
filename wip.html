@@ -134,6 +134,7 @@
                text.style.position = 'fixed';
             }
             
+            /** Make the tooltip follow the cursor. **/
             tooltips[i].addEventListener("mousemove", function(e){
                 let text = Array.from(this.children).filter(isToolTipText);
                 if(this.classList.contains('infoBox')){
@@ -146,13 +147,23 @@
                
                 text[0].style.visibility = "visible";
             });
+            
+            /** Make the tooltip information invisible. **/
             tooltips[i].addEventListener("mouseout", function(e){
                 let text = Array.from(this.children).filter(isToolTipText);
                 text[0].style.visibility = "hidden";
             });
-        }
+            
+            /** Make the tooltips clickable. **/
+            tooltips[i].addEventListener("click", function(){
+                $("popoverBackground").style.display = "block";
+                $("popoverContent").style.display = "flex";
+            });
+                                         
+        }//end for loop
         
         /** MAKING PROJECT BLOCKS CLICKABLE ---------------- **/
+        
         
         /** MAKE THE POPOVER CLOSE WHEN CLICKING OUTSIDE -- **/
         
