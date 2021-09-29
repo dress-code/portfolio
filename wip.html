@@ -254,12 +254,12 @@
         sectionNum = $("sectionNumber");
         
         /* Change the title of the section*/
-        title.removeChild(title.childNodes[0]);
-        title.appendChild( document.createTextNode(_SECTIONS[newSectionIndex].title );
+        title.removeChild( title.childNodes[0] );
+        title.appendChild( document.createTextNode( _SECTIONS[newSectionIndex].title ) );
         
         /* Change section number*/
-        sectionNum.removeChild(sectionNum.childNodes[0]);
-        sectionNum.appendChild(document.createTextNode(_SECTIONS[newSectionIndex].pageNumber));
+        sectionNum.removeChild( sectionNum.childNodes[0] );
+        sectionNum.appendChild( document.createTextNode( _SECTIONS[newSectionIndex].pageNumber ) );
         
         /* Change the section content*/
         oldSection.classList.remove("current")
