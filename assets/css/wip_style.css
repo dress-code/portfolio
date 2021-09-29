@@ -43,7 +43,7 @@ a:hover, .controls > .enabled {
     left: calc(50% - 132px);
 }
 
-, #sectionTitle, #sectionTitle + h5 {
+#sectionTitle, #sectionTitle + h5 {
     color: #363945;
 }
 
