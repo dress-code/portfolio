@@ -180,11 +180,16 @@
             if(this.classList.contains("enabled")){
                console.log("Forward Button Press");
                 
-                let currentIndex = $$("current")[0].id;
+                let currentIndex = $$("current")[0].id,
+                    backButton = $("backButton");
+                
                 if(currentIndex < 2){
                     currentIndex = parseInt(currentIndex, 10) + 1;
                     console.log(currentIndex);
                     changeSection(currentIndex);
+                    if(backButton.classList.contains("disabled")){
+                        backButton.classList.remove("disabled");
+                    }
                 }else{
                     console.log("No more sections.");
                 }
