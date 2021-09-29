@@ -189,6 +189,7 @@
         
         $("popoverBackground").addEventListener("click", function(){
            this.style.display = "none";
+            $("scrollPrompt").style.opacity = 0;
             $("popoverContent").style.display = "none";
         });
         
@@ -196,6 +197,7 @@
         
         $("closeButton").addEventListener("click", function(){
              $("popoverContent").style.display = "none";
+             $("scrollPrompt").style.opacity = 0;
              $("popoverBackground").style.display = "none";
         });
         
