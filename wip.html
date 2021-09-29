@@ -178,8 +178,8 @@
                 $("popoverBackground").style.display = "block";
                 $("popoverContent").style.display = "block";
                 /* Make the scroll prompt appear after 2 seconds. */
-                $("scrollPrompt").setTimeout(function(){
-                    this.style.opacity = 1;
+                setTimeout(() => {
+                    $("scrollPrompt").style.opacity = 1;
                 }, 2000);
             });
                                          
