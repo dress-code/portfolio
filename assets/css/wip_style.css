@@ -84,6 +84,10 @@
     color: #000000;
 }
 
+.projectHero {
+    background-image: url(../images/mockups/virago_mockup_thumbnail.png");
+}
+
 /* General Styles -------------------------------- */
 .main > section.hidden {
     display: none;
