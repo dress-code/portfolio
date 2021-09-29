@@ -177,6 +177,10 @@
             tooltips[i].addEventListener("click", function(){
                 $("popoverBackground").style.display = "block";
                 $("popoverContent").style.display = "block";
+                /* Make the scroll prompt appear after 2 seconds. */
+                $("scrollPrompt").setTimeout(function(){
+                    this.style.opacity = 1;
+                }, 2000);
             });
                                          
         }//end for loop
@@ -194,6 +198,7 @@
              $("popoverContent").style.display = "none";
              $("popoverBackground").style.display = "none";
         });
+        
         
         /** CHANGING SECTIONS ------------------------------- **/
         
