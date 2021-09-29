@@ -198,7 +198,6 @@
     
         $("forwardButton").addEventListener("click", function(){
             if(!this.classList.contains("disabled")){
-               console.log("Forward Button Press");
                 
                 let currentIndex = $$("current")[0].id,
                     backButton = $("backButton");
@@ -209,7 +208,7 @@
                     currentIndex = parseInt(currentIndex, 10) + 1;
                     
                     /*If the current index is now at the max value, disable the forward button.*/
-                    if( currentIndex === ( _SECTIONS.length - 1 ) ) {
+                    if( currentIndex === ( _SECTIONS.length ) ) {
                         this.src = "./assets/images/icons/forward_icon_disabled.svg";
                         this.classList.add("disabled");
                     }
