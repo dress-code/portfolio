@@ -167,16 +167,28 @@
         
         $("backButton").addEventListener("click", function(){
             if(!this.classList.contains("disabled")){
-                let currentIndex = $$("current")[0].id;
+                let currentIndex = $$("current")[0].id,
+                    forwardButton = $("forwardButton");
+                
                 if(currentIndex > 0){
+                    
+                    /*Decrement the current section index by one.*/
                     currentIndex = parseInt(currentIndex, 10) - 1;
+                    
+                    /*If we are at the beginning, disabled the back button.*/
                     if(currentIndex === 0){
                         this.src = "./assets/images/icons/back_icon_disabled.svg";
                         this.classList.add("disabled");
                     }
+                    
+                    /*Change the section.*/
                     changeSection(currentIndex);
-                }else{
-                    this.classList.add("disabled");
+                    
+                    /*If the forward button was disabled, enable it now.*/
+                    if(forwardButton.classList.contains("disabled")){
+                        forwardButton.classList.remove("disabled");
+                        forwardButton.src = "./assets/images/icons/forward_icon.svg";
+                    }
                 }
                 
             }else{
@@ -210,8 +222,6 @@
                         backButton.classList.remove("disabled");
                         backButton.src = "./assets/images/icons/backward_icon.svg";
                     }
-                }else{
-                    console.log("No more sections.");
                 }
                 
             }else{
