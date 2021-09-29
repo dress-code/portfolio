@@ -161,6 +161,16 @@
         $("backButton").addEventListener("click", function(){
             if(this.classList.contains("enabled")){
                console.log("Back Button Press");
+                
+                let currentIndex = $$("current")[0].id;
+                if(currentIndex > 0){
+                    currentIndex = currentIndex - 1;
+                    console.log(currentIndex);
+                    changeSection(currentIndex);
+                }else{
+                    console.log("No more sections.");
+                }
+                
             }else{
                console.log("Back button disabled.");
             }
@@ -169,6 +179,16 @@
         $("forwardButton").addEventListener("click", function(){
             if(this.classList.contains("enabled")){
                console.log("Forward Button Press");
+                
+                let currentIndex = $$("current")[0].id;
+                if(currentIndex < 2){
+                    currentIndex = currentIndex + 1;
+                    console.log(currentIndex);
+                    changeSection(currentIndex);
+                }else{
+                    console.log("No more sections.");
+                }
+                
             }else{
                console.log("Forward button disabled.");
             }
