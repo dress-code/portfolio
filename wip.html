@@ -171,7 +171,8 @@
                 if(currentIndex > 0){
                     currentIndex = parseInt(currentIndex, 10) - 1;
                     if(currentIndex === 0){
-                        this.src = "./assets/images/icons/back_icon_disabled";
+                        this.src = "./assets/images/icons/back_icon_disabled.svg";
+                        this.classList.add("disabled");
                     }
                     changeSection(currentIndex);
                 }else{
