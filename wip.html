@@ -170,6 +170,9 @@
                 let currentIndex = $$("current")[0].id;
                 if(currentIndex > 0){
                     currentIndex = parseInt(currentIndex, 10) - 1;
+                    if(currentIndex === 0){
+                        this.src = "./assets/images/icons/back_icon_disabled";
+                    }
                     changeSection(currentIndex);
                 }else{
                     this.classList.add("disabled");
@@ -188,9 +191,20 @@
                     backButton = $("backButton");
                 
                 if( currentIndex < ( _SECTIONS.length - 1 ) ) {
+                    
+                    /*Increment the current section index*/
                     currentIndex = parseInt(currentIndex, 10) + 1;
-                    console.log(currentIndex);
+                    
+                    /*If the current index is now at the max value, disable the forward button.*/
+                    if( currentIndex === ( _SECTIONS.length - 1 ) ) {
+                        this.src = "./assets/images/icons/forward_icon_disabled";
+                        this.classList.add("disabled");
+                    }
+                    
+                    /*Change the section by moving forward one.*/
                     changeSection(currentIndex);
+                    
+                    /*If the back button was disabled, enable it now.*/
                     if(backButton.classList.contains("disabled")){
                         backButton.classList.remove("disabled");
                     }
