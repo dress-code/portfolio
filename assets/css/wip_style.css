@@ -38,6 +38,7 @@
 
 .popoverContent {
     background-color: #FFFFFF;
+    position: absolute;
     width: 80%;
     height: 80vh;
     top: 10vh;
