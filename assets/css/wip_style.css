@@ -15,6 +15,10 @@
     z-index: 99;
 }
 
+#forwardButton:hover, #backButton:hover {
+    cursor: url("../images/hover_cursor.svg"), auto;
+}
+
 #sectionTitle, #sectionTitle + h5 {
     color: #363945;
 }
