@@ -94,6 +94,13 @@
     font-style: italic;
 }
 
+.projectCallout {
+    color: #000000;
+    padding: 24px;
+    font-size: 52px;
+    width: 100%;
+}
+
 .projectHero {
     background-image: url("../images/mockups/virago_mockup_thumbnail.png");
     height: 100%;
