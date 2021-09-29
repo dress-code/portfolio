@@ -197,6 +197,7 @@
                     if(currentIndex === 0){
                         this.src = "./assets/images/icons/back_icon_disabled.svg";
                         this.classList.add("disabled");
+                        this.classList.remove("enabled");
                     }
                     
                     /*Change the section.*/
@@ -206,6 +207,7 @@
                     if(forwardButton.classList.contains("disabled")){
                         forwardButton.classList.remove("disabled");
                         forwardButton.src = "./assets/images/icons/forward_icon.svg";
+                        forwardButton.classList.add("enabled");
                     }
                 }
                 
@@ -229,6 +231,7 @@
                     if( currentIndex === ( _SECTIONS.length - 1 ) ) {
                         this.src = "./assets/images/icons/forward_icon_disabled.svg";
                         this.classList.add("disabled");
+                        this.classList.remove("enabled");
                     }
                     
                     /*Change the section by moving forward one.*/
@@ -237,6 +240,7 @@
                     /*If the back button was disabled, enable it now.*/
                     if(backButton.classList.contains("disabled")){
                         backButton.classList.remove("disabled");
+                        backButton.classList.add("enabled");
                         backButton.src = "./assets/images/icons/backward_icon.svg";
                     }
                 }
