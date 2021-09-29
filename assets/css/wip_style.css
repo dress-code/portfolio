@@ -85,6 +85,15 @@
     color: #000000;
 }
 
+.projectTitle > h1 {
+    font-size: 72px;
+}
+
+.projectTitle > h2 {
+    font-weight: normal;
+    font-style: italic;
+}
+
 .projectHero {
     background-image: url("../images/mockups/virago_mockup_thumbnail.png");
     height: 100%;
