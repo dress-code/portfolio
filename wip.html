@@ -162,6 +162,7 @@
                 text[0].style.visibility = "hidden";
             });
         }
+        
         /** CHANGING SECTIONS ------------------------------- **/
         
         $("backButton").addEventListener("click", function(){
@@ -205,6 +206,20 @@
 
     const spansSlow = document.querySelectorAll('.spanSlow');
     const spansFast = document.querySelectorAll('.spanFast');
+    const _SECTIONS = [
+            {
+                title:"PROJECTS",
+                pageNumber:"1"
+            },
+            {
+                title:"RESUMÉ",
+                pageNumber:"2"
+            },
+            {
+                title:"FOSTER DOGS",
+                pageNumber:"3"
+            }
+        ];
 
     let width = window.innerWidth;
 
@@ -238,17 +253,13 @@
         title = $("sectionTitle"),
         sectionNum = $("sectionNumber");
         
-        
-        /* Create the new title and index for display. */
-        let x = document.createTextNode(""),
-            sectionNumContent = document.createTextNode(newSectionIndex + 1);
-        
         /* Change the title of the section*/
-        //title.removeChild(title.childNodes[0]);
+        title.removeChild(title.childNodes[0]);
+        title.appendChild( document.createTextNode(_SECTIONS[newSectionIndex].title );
         
         /* Change section number*/
         sectionNum.removeChild(sectionNum.childNodes[0]);
-        sectionNum.appendChild(sectionNumContent);
+        sectionNum.appendChild(document.createTextNode(_SECTIONS[newSectionIndex].pageNumber));
         
         /* Change the section content*/
         oldSection.classList.remove("current")
