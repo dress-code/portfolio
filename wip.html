@@ -30,7 +30,10 @@
     
     <div class="controls">
         <img id="backButton" class="disabled" src="./assets/images/icons/back_icon_disabled.svg" alt="Back button disabled. Cannot go back any more."/>
-        <h1>PROJECTS</h1>
+        <div>
+            <h1 id="sectionTitle">PROJECTS</h1>
+            <h5><span id="sectionNumber">1</span>/3</h5>
+        </div>
         <img id="forwardButton" class="" src="./assets/images/icons/forward_icon.svg" alt="Next section." />
     </div>
     
@@ -132,6 +135,8 @@
 
     window.onload = () => {
         
+        /** TOOLTIP POSITIONING ----------------------------- **/
+        
         let tooltips = document.getElementsByClassName("tooltip");
 
         for(var i = 0; i < tooltips.length; i++){
@@ -157,18 +162,16 @@
                 text[0].style.visibility = "hidden";
             });
         }
+        /** CHANGING SECTIONS ------------------------------- **/
         
         $("backButton").addEventListener("click", function(){
             if(!this.classList.contains("disabled")){
-               console.log("Back Button Press");
-                
                 let currentIndex = $$("current")[0].id;
                 if(currentIndex > 0){
                     currentIndex = parseInt(currentIndex, 10) - 1;
-                    console.log(currentIndex);
                     changeSection(currentIndex);
                 }else{
-                    console.log("No more sections.");
+                    this.classList.add("disabled");
                 }
                 
             }else{
@@ -230,9 +233,17 @@
     }
     
     function changeSection(newSectionIndex){
-        console.log("fired function");
-        let newSection = $(newSectionIndex);
-        let oldSection = $$("current")[0];
+        let newSection = $(newSectionIndex),
+        oldSection = $$("current")[0],
+        title = $("sectionTitle"),
+        sectionNum = $("sectionNumber");
+        
+        
+        
+        let x = document.createTextNode(""),
+            sectionNumContent = document.createTextNode(newSectionIndex + 1);
+        console.log(sectionNumContent);
+        
         oldSection.classList.remove("current")
         oldSection.classList.add("hidden");
         newSection.classList.remove("hidden");
