@@ -27,7 +27,7 @@
 
 /* Content Pop Over ------------------------------ */
 
-.contentPopover {
+.popover {
     display: none;
     position: absolute;
     width: 100%;
