@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: space-between;
     left: calc(50% - 132px);
+    z-index: 99;
 }
 
 #sectionTitle, #sectionTitle + h5 {
