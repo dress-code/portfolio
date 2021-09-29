@@ -47,6 +47,12 @@ a:hover, .controls > .enabled {
     color: #363945;
 }
 
+#sectionTitle + h5 {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
 h1 {
     font-size: 24px;
     color: #ffffff;
