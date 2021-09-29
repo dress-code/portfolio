@@ -72,6 +72,14 @@
     display: flex;
 }
 
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
 .projectTitle {
     width: 50%;
     height: 100%;
