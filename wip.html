@@ -197,7 +197,7 @@
                     
                     /*If the current index is now at the max value, disable the forward button.*/
                     if( currentIndex === ( _SECTIONS.length - 1 ) ) {
-                        this.src = "./assets/images/icons/forward_icon_disabled";
+                        this.src = "./assets/images/icons/forward_icon_disabled.svg";
                         this.classList.add("disabled");
                     }
                     
@@ -207,6 +207,7 @@
                     /*If the back button was disabled, enable it now.*/
                     if(backButton.classList.contains("disabled")){
                         backButton.classList.remove("disabled");
+                        backButton.src = "./assets/images/icons/backward_icon.svg";
                     }
                 }else{
                     console.log("No more sections.");
