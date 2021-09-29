@@ -31,6 +31,10 @@
     top: 5%;
 }
 
+#closeButton:hover {
+    cursor: url("../images/hover_cursor.svg"), auto;
+}
+
 /* Content Pop Over ------------------------------ */
 
 #popoverBackground {
