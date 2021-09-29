@@ -78,6 +78,7 @@
 
 .column {
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .projectTitle {
