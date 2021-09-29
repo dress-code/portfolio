@@ -15,8 +15,12 @@
     z-index: 99;
 }
 
-#forwardButton:hover, #backButton:hover {
+.enabled {
     cursor: url("../images/hover_cursor.svg"), auto;
+}
+
+.disabled {
+    cursor: url("../images/cursor.svg"), auto;
 }
 
 #sectionTitle, #sectionTitle + h5 {
