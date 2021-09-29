@@ -153,6 +153,14 @@
             });
         }
         
+        /** MAKING PROJECT BLOCKS CLICKABLE ---------------- **/
+        
+        /** MAKE THE POPOVER CLOSE WHEN CLICKING OUTSIDE -- **/
+        
+        $$("popover")[0].addEventListener("click", function(){
+           this.style.display = "none";
+        });
+        
         /** CHANGING SECTIONS ------------------------------- **/
         
         $("backButton").addEventListener("click", function(){
