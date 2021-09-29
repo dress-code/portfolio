@@ -167,14 +167,18 @@
                                          
         }//end for loop
         
-        /** MAKING PROJECT BLOCKS CLICKABLE ---------------- **/
-        
-        
-        /** MAKE THE POPOVER CLOSE WHEN CLICKING OUTSIDE -- **/
+        /** Make the modal close when clicking outside. -- **/
         
         $("popoverBackground").addEventListener("click", function(){
            this.style.display = "none";
             $("popoverContent").style.display = "none";
+        });
+        
+        /* Make the close button close the modal. ----------- **/
+        
+        $("closeButton").addEventListener("click", function(){
+             $("popoverContent").style.display = "none";
+             $("popoverBackground").style.display = "none";
         });
         
         /** CHANGING SECTIONS ------------------------------- **/
