@@ -101,6 +101,12 @@
     background-position: center;
 }
 
+#scrollPrompt {
+    top: 90%;
+    position: absolute;
+    opacity: 0;
+}
+
 
 /*Banner image is a feature image at the end of a project.*/
 .bannerImage {
