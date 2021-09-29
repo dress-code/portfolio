@@ -91,6 +91,15 @@
     width: 50%;
 }
 
+
+/*Banner image is a feature image at the end of a project.*/
+.bannerImage {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/mockups/virago_three_screen.svg");
+    background-position: cover;
+}
+
 /* General Styles -------------------------------- */
 .main > section.hidden {
     display: none;
