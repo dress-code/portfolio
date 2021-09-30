@@ -338,25 +338,25 @@ p {
 }
 
 .botnine {
-    background-image: url("../images/bot-9-box.svg");
+    background-image: url("../images/projects/bot-9-box.svg");
 }
 .botnine:hover {
-    background-image:url("../images/bot-9-box-color.svg");
+    background-image:url("../images/projects/bot-9-box-color.svg");
 }
 
 .mcp {
-    background-image: url("../images/biker-box.svg");
+    background-image: url("../images/projects/biker-box.svg");
     
 }
 .mcp:hover {
-    background-image:url("../images/biker-box-color.svg");
+    background-image:url("../images/projects/biker-box-color.svg");
 }
 
 .virago {
-    background-image: url("../images/virago-box.svg");
+    background-image: url("../images/projects/virago-box.svg");
 }
 .virago:hover {
-    background-image:url("../images/virago-box-color.svg");
+    background-image:url("../images/projects/virago-box-color.svg");
 }
 
 .dogs {
