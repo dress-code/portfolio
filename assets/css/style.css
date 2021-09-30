@@ -118,7 +118,7 @@ p {
 .column {
     flex-direction: column;
     align-items: center;
-    justify-contenet: center;
+    justify-content: center;
 }
 
 .projectTitle {
@@ -408,11 +408,11 @@ p {
     }
     
     .projectCallout {
-        font-size: 52px;
+        font-size: 48px;
     }
     
     .projectDescription {
-        font-size: 36px;
+        font-size: 24px;
     }
     
     .row {
