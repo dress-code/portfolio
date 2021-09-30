@@ -78,7 +78,6 @@
 
 .column {
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .projectTitle {
@@ -103,7 +102,7 @@
 }
 
 .projectCallout {
-    padding: 64px;
+    padding: 64px 64px 0 64px;
     font-size: 48px;
     width: calc(100% - 128px);
 }
