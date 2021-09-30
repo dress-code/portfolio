@@ -187,7 +187,11 @@ p {
     display: none;
 }
 
-
+.projectSectionTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+}
 
 
 /*Banner image is a feature image at the end of a project.*/
