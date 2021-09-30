@@ -135,7 +135,11 @@ p {
     align-items: center;
 }
 
-.projectTitle > h1, .projectTitle > h2, .projectCallout, .projectDescription {
+.projectTitle > h1, 
+.projectTitle > h2, 
+.projectCallout, 
+.projectDescription, 
+.sectionTitle {
     color: #363945;
 }
 
