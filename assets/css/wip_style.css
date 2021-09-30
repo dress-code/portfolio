@@ -145,6 +145,10 @@
     color: #FFFFFF;
 }*/
 
+.rightAlign {
+    text-align: right;
+}
+
 .main > section.hidden {
     display: none;
     opacity: 0;
