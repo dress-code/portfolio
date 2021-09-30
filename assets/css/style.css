@@ -10,6 +10,7 @@ body {
     color: #FBFCFF;
     cursor: url("../images/cursor.svg"), auto;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 a {
