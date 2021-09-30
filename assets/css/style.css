@@ -188,10 +188,7 @@ p {
 }
 
 #scrollPrompt {
-    top: 90%;
-    position: absolute;
-    opacity: 0;
-    transition: opacity ease .25s;
+    display: none;
 }
 
 
@@ -431,6 +428,14 @@ p {
     
     .row {
         flex-direction: row;
+    }
+    
+    #scrollPrompt {
+        display: block;
+        top: 90%;
+        position: absolute;
+        opacity: 0;
+        transition: opacity ease .25s;
     }
 }
 
