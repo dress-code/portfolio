@@ -73,7 +73,8 @@
 }
 
 .row {
-    flex-direction: row;
+   flex-direction: column;
+   justify-content: center;
 }
 
 .column {
@@ -90,7 +91,7 @@
     align-items: center;
 }
 
-.projectTitle > h1, .projectTitle > h2, .projectCallout {
+.projectTitle > h1, .projectTitle > h2, .projectCallout, .projectDescription {
     color: #363945;
 }
 
@@ -104,16 +105,16 @@
 }
 
 .projectCallout, .projectDescription {
-    padding: 48px 64px 0 64px;
-    width: 50%;
+    padding: 48px 0 0 0;
+    width: 75%;
 }
 
 .projectCallout {
-    font-size: 52px;
+    font-size: 32px;
 }
 
 .projectDescription {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: normal;
 }
 
@@ -395,6 +396,27 @@ footer > div > img {
       from {opacity: 0;}
       to {opacity: 1;}
   }
+
+/** Starting at tablet size, make the fonts and change the layout of the project description. */
+
+@media screen and (min-width: 768px){
+    .projectCallout, .projectDescription {
+        padding: 48px 0 0 0;
+        width: 50%;
+    }
+    
+    .projectCallout {
+        font-size: 52px;
+    }
+    
+    .projectDescription {
+        font-size: 36px;
+    }
+    
+    .row {
+        flex-direction: row;
+    }
+}
 
 @media screen and (min-width:1200px) {
     
