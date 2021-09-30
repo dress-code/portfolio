@@ -104,9 +104,9 @@
 }
 
 .projectCallout {
-    padding: 64px 64px 0 64px;
-    font-size: 48px;
-    width: calc(100% - 128px);
+    padding: 48px 64px 0 64px;
+    font-size: 36px;
+    width: 50%;
 }
 
 .projectCallout + img {
