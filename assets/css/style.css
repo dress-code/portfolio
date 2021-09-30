@@ -167,6 +167,7 @@ p {
     color: #5600C3;
     vertical-align: middle;
     margin-left: 4px;
+    font-weight: bold;
 }
 
 .projectCallout + img {
