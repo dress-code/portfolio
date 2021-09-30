@@ -222,27 +222,6 @@ p {
 .current {
     display: block;
 }
-
-
-.infoBox {
-    background-image: url(../images/info_box.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: fixed;
-    bottom: 36px;
-    right: 36px;
-    width: 64px;
-    height: 64px;
-}
-
-.infoBox:hover {
-    background-image: url(../images/info_box_color.svg);
-    cursor: url("../images/hover_cursor.svg"), auto;
-}
-
-#infoBoxToolTipText > img {
-    width: 100px;
-}
   
   /* Tooltip text */
   .tooltiptext {
@@ -329,7 +308,6 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transition: background-image ease-in-out .25s;
 }
 .itemBlock:hover{
     cursor: url("../images/hover_cursor.svg"), auto;
@@ -400,6 +378,11 @@ p {
 /** Starting at tablet size, make the fonts and change the layout of the project description. */
 
 @media screen and (min-width: 768px){
+    
+    .itemBlock {
+        transition: background-image ease-in-out .25s;
+    }
+    
     .projectTitle {
         width: 50%;
         height: 100%;
