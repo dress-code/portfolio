@@ -107,7 +107,7 @@ p {
 
 .projectSection {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     display: flex;
     justify-content: center;
 }
@@ -150,9 +150,14 @@ p {
     font-style: italic;
 }
 
-.projectCallout, .projectDescription, .projectSectionTitle, .styleguide {
+.projectCallout, .projectDescription, .projectSectionTitle {
     padding: 12px 0;
     width: 90%;
+}
+
+.styleguide {
+    width: 65%;
+    margin-bottom: 64px;
 }
 
 .projectCallout {
@@ -401,9 +406,13 @@ p {
         height: 100%;
     }
     
-    .projectCallout, .projectDescription, .projectSectionTitle, .styleguide {
+    .projectCallout, .projectDescription, .projectSectionTitle{
         padding: 48px 0 0 0;
         width: 75%;
+    }
+    
+    .styleguide {
+        width: 50%;
     }
     
     .projectCallout {
