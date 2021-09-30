@@ -11,6 +11,12 @@ body {
     cursor: url("../images/cursor.svg"), auto;
     overflow-x: hidden;
     overflow-y: hidden;
+     -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+     display: none;
 }
 
 a {
@@ -33,17 +39,6 @@ h1 {
 
 p {
     padding-bottom: 24px;
-}
-
-/* Hide scroll bars */
-.example::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.example {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
 }
 
 
