@@ -3,6 +3,38 @@
     margin: 0;
 }
 
+body {
+    background-color: #FBFCFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    color: #FBFCFF;
+    cursor: url("../images/cursor.svg"), auto;
+    overflow-x: hidden;
+}
+
+a {
+    color: #797F98;
+    text-decoration: none;
+}
+
+a:hover, .controls > .enabled {
+    cursor: url("../images/hover_cursor.svg"), auto;
+}
+
+
+h1 {
+    font-size: 24px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p {
+    padding-bottom: 24px;
+}
+
+
 /* Page Controls -------------------------------- */
 .controls {
     position: fixed;
@@ -173,35 +205,6 @@
     display: block;
 }
 
-body {
-    background-color: #FBFCFF;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 16px;
-    color: #FBFCFF;
-    cursor: url("../images/cursor.svg"), auto;
-}
-
-a {
-    color: #797F98;
-    text-decoration: none;
-}
-
-a:hover, .controls > .enabled {
-    cursor: url("../images/hover_cursor.svg"), auto;
-}
-
-
-h1 {
-    font-size: 24px;
-    color: #ffffff;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-p {
-    padding-bottom: 24px;
-}
 
 .infoBox {
     background-image: url(../images/info_box.svg);
