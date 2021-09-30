@@ -83,7 +83,6 @@
 
 .projectTitle {
     width: 50%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -115,7 +114,6 @@
 
 .projectHero {
     background-image: url("../images/mockups/virago_mockup_thumbnail.png");
-    height: 100%;
     width: 50%;
     background-position: center;
 }
