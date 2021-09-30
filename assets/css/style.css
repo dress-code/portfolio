@@ -189,9 +189,8 @@ p {
 }
 
 .projectSectionTitle {
-    width: 100%;
-    text-align: center;
-    font-size: 36px;
+    width: 80%;
+    font-size: 24px;
 }
 
 
@@ -411,8 +410,8 @@ p {
         font-size: 48px;
     }
     
-    .projectDescription {
-        font-size: 24px;
+    .projectSectionTitle {
+        font-size: 52px;
     }
     
     .row {
