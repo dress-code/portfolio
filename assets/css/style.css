@@ -418,6 +418,7 @@ footer > div > img {
     
     .projectHero {
         width: 50%;
+        height: 50%;
     }
     
     .projectCallout, .projectDescription {
