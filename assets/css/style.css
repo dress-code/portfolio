@@ -383,6 +383,10 @@ p {
         height: 100%;
     }
     
+    .projectTitle > h1 {
+        font-size: 48px;
+    }
+    
     .projectTitle > h2 {
         display: block;
         font-size: 24px;
