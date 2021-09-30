@@ -102,10 +102,10 @@ p {
     display: none;
     background-color: #FFFFFF;
     position: absolute;
-    width: 80%;
+    width: 90%;
     height: 80%;
     top: 10%;
-    left: 10%;
+    left: 5%;
     overflow-y: scroll;
     z-index: 101;
 }
