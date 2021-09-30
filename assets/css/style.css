@@ -433,23 +433,21 @@ p {
     }
 
     .itemBlock {
-        width: 232px;
+        width: 248px;
         height: 364px;
-        margin: 12px;
     }
 }
 
 @media screen and (min-width:1440px) {
     .itemBlock {
-        width: 232px;
+        width: 400px;
         height: 564px;
-        margin: 32px;
     }
 }
 
 @media screen and (min-width:1800px) {
     .itemBlock {
         height: 692px;
-        margin: 64px;
+        width: 500px;
     }
 }
