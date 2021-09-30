@@ -45,7 +45,7 @@ p {
 /* Page Controls -------------------------------- */
 .controls {
     position: absolute;
-    bottom: 40px;
+    bottom: 36px;
     width: 264px;
     display: flex;
     align-items: center;
