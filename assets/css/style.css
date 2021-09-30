@@ -144,10 +144,11 @@ p {
 }
 
 .projectTitle > h1 {
-    font-size: 64px;
+    font-size: 36px;
 }
 
 .projectTitle > h2 {
+    display: none;
     font-size: 16px;
     font-weight: normal;
     font-style: italic;
@@ -405,6 +406,7 @@ p {
     }
     
     .projectTitle > h2 {
+        display: block;
         font-size: 24px;
     }
     
