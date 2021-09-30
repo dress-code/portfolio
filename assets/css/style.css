@@ -103,10 +103,25 @@
     font-style: italic;
 }
 
-.projectCallout {
+.projectCallout, .projectDescription {
     padding: 48px 64px 0 64px;
-    font-size: 36px;
     width: 50%;
+}
+
+.projectCallout {
+    font-size: 52px;
+}
+
+.projectDescription {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.purpleCallout {
+    color: #5600C3;
+    font-size: 48px;
+    vertical-align: middle;
+    margin-left: 4px;
 }
 
 .projectCallout + img {
