@@ -157,7 +157,7 @@ p {
 
 .styleguide {
     width: 65%;
-    margin-bottom: 64px;
+    margin: 64px 0;
 }
 
 .projectCallout {
@@ -202,7 +202,7 @@ p {
 /*Banner image is a feature image at the end of a project.*/
 .bannerImage {
     width: 100%;
-    height: 100%;
+    height: 348px;
     background-image: url("../images/mockups/virago_three_screen.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -259,28 +259,6 @@ p {
       padding-bottom: 4px;
       padding-left: 4px;
   }
-
-#headerNav{
-    position: fixed;
-    height: 172px;
-    top: calc(50vh - 86px);
-    left: 36px;
-    display: flex;
-    flex-direction: column;
-    padding-right: 64px;
-    z-index: 7;
-}
-
-#headerNav > a {
-    font-size: 2vw;
-    padding: 0 0 24px 0;
-    font-family: 'Barlow Condensed', sans-serif;
-}
-
-#headerNav > a:hover {
-    color: #2D50D7;
-    transition: color ease 500ms;
-}
 
 /*-------------------------------*/
 
@@ -406,9 +384,12 @@ p {
         height: 764px;
     }
     
-    .projectCallout, .projectDescription, .projectSectionTitle{
-        padding: 48px 0 0 0;
+    .projectCallout, .projectDescription, .projectSectionTitle {
         width: 75%;
+    }
+    
+    .projectCallout, .projectSectionTitle {
+        padding: 64px 0 0 0;
     }
     
     .styleguide {
