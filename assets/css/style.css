@@ -419,6 +419,10 @@ p {
         opacity: 0;
         transition: opacity ease .25s;
     }
+    
+    .bannerImage {
+        height: 764px;
+    }
 }
 
 @media screen and (min-width:1200px) {
