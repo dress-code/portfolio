@@ -84,7 +84,7 @@ p {
 
 /* Content Pop Over ------------------------------ */
 
-#popoverBackground {
+#modalBackground {
     display: none;
     position: absolute;
     width: 100%;
@@ -93,7 +93,7 @@ p {
     z-index: 100;
 }
 
-.popoverContent {
+.modalContent {
     display: none;
     background-color: #FFFFFF;
     position: absolute;
