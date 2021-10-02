@@ -205,8 +205,10 @@
             /** Make the tooltips clickable. **/
             tooltips[i].addEventListener("click", function(){
                 $("popoverBackground").style.display = "block";
-                let modalID = this.id + "Modal";
-                $(modalID).style.display = "block";
+                let modalID = this.id + "Modal",
+                    modalToOpen = $(modalID);
+                modalToOpen.classList.add("currentModal");
+                modalToOpen.style.display = "block";
                 /* Make the scroll prompt appear after 2 seconds. */
                 setTimeout(() => {
                     $("scrollPrompt").style.opacity = 1;
@@ -220,7 +222,9 @@
         $("popoverBackground").addEventListener("click", function(){
            this.style.display = "none";
             $("scrollPrompt").style.opacity = 0;
-            $("popoverContent").style.display = "none";
+            let currentModal = $$("currentModal")[0];
+            currentModal.style.display = "none";
+            currentModal.classList.remove("currentModal");
         });
         
         /* Make the close button close the modal. ----------- **/
