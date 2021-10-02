@@ -328,6 +328,9 @@ p {
 .major {
     background-image: url("../images/dog_thumbnails/major.svg");
 }
+.major:hover {
+    background-image: url("../images/dog_thumbnails/major2.svg");
+}
 .athena {
     background-image: url("../images/dog_thumbnails/athena.svg");
 } 
