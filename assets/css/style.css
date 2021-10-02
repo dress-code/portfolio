@@ -318,6 +318,11 @@ p {
     background-image:url("../images/projects/virago-box-color.svg");
 }
 
+/** About Section */
+#anna {
+    background-image:url("../images/me-cartoon.svg");
+}
+
 .dogs {
     display: flex;
     justify-content: center;
