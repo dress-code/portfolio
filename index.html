@@ -204,7 +204,7 @@
             
             /** Make the tooltips clickable. **/
             tooltips[i].addEventListener("click", function(){
-                $("popoverBackground").style.display = "block";
+                $("modalBackground").style.display = "block";
                 let modalID = this.id + "Modal",
                     modalToOpen = $(modalID);
                 modalToOpen.classList.add("currentModal");
@@ -219,7 +219,7 @@
         
         /** Make the modal close when clicking outside. -- **/
         
-        $("popoverBackground").addEventListener("click", function(){
+        $("modalBackground").addEventListener("click", function(){
            this.style.display = "none";
             $("scrollPrompt").style.opacity = 0;
             let currentModal = $$("currentModal")[0];
