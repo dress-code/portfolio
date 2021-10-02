@@ -93,7 +93,7 @@ p {
     z-index: 100;
 }
 
-#popoverContent {
+.popoverContent {
     display: none;
     background-color: #FFFFFF;
     position: absolute;
