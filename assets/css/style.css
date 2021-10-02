@@ -230,11 +230,11 @@ p {
   /* Tooltip text */
   .tooltiptext {
     visibility: hidden;
+    font-family: 'Barlow', sans-serif;
     width: auto;
     height: auto;
     background-color: #FBFCFF;
     color: #000000;
-    letter-spacing: 1px;
     padding: 4px;
     position: absolute;
     z-index: 1;
