@@ -34,7 +34,7 @@
     </div>
         
     <div id="popoverBackground"></div>
-    <div id="popoverContent">
+    <div id="viragoModal" class="popoverContent hidden">
         <!-- <img id="closeButton" src="./assets/images/icons/close_icon.svg" alt="Close modal."/> -->
         <div class="projectSection row">
             <div class="projectHero"></div>
@@ -88,21 +88,21 @@
 
     <section id="0" class="projects current">
         <div class="blocksDiv">
-            <div class="itemBlock botnine tooltip">
+            <div id="botnine" class="itemBlock botnine tooltip">
                 <div class="tooltiptext">
                     <img src="./assets/images/mockups/bot_9_mockup.png" alt="" />
                     <h3>BOT-9</h3>
                     <h4>Dick's Sporting Goods</h4>
                 </div>
             </div>
-            <div class="itemBlock mcp tooltip">
+            <div id="mcp" class="itemBlock mcp tooltip">
                 <div class="tooltiptext">
                     <img src="./assets/images/mockups/mcp_mockup.png" alt="" />
                     <h3>Monroe County Parks</h3>
                     <h4>Class Project</h4>
                 </div>
             </div>
-            <div class="itemBlock virago tooltip">
+            <div id="virago" class="itemBlock virago tooltip">
                 <div class="tooltiptext">
                     <img src="./assets/images/mockups/virago_mockup_thumbnail.png" alt="" />
                     <h3>Virago</h3>
@@ -198,7 +198,8 @@
             /** Make the tooltips clickable. **/
             tooltips[i].addEventListener("click", function(){
                 $("popoverBackground").style.display = "block";
-                $("popoverContent").style.display = "block";
+                let modalID = this.id + "Modal";
+                $(modalID).style.display = "block";
                 /* Make the scroll prompt appear after 2 seconds. */
                 setTimeout(() => {
                     $("scrollPrompt").style.opacity = 1;
