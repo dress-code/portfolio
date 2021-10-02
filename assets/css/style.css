@@ -447,6 +447,10 @@ p {
 }
 
 @media screen and (min-width:1440px) {
+    .styleGuide {
+        width: 25%;
+    }
+    
     .itemBlock {
         width: 400px;
         height: 564px;
