@@ -135,7 +135,8 @@ p {
 .projectTitle > h2, 
 .projectCallout, 
 .projectDescription, 
-.projectSectionTitle {
+.projectSectionTitle,
+.about > .wrapper > h1 {
     color: #363945;
 }
 
@@ -260,6 +261,16 @@ p {
       padding-left: 4px;
       font-weight: normal;
   }
+
+/* About section ------ */
+.about > .wrapper {
+    width: 50%;
+}
+
+.about > .wrapper > h1 {
+    font-size: 48px;
+    padding-bottom: 32px;
+}
 
 /*-------------------------------*/
 
