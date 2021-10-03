@@ -321,6 +321,11 @@ p {
 /** About Section */
 #anna {
     background-image:url("../images/me-cartoon.svg");
+    width: 248px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .dogs {
