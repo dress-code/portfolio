@@ -332,7 +332,6 @@ p {
     height: 500px;
     background-repeat: no-repeat;
     background-size: contain;
-    transition: background-image ease-in-out .25s;
     margin-right: 24px;
 }
 
