@@ -333,8 +333,8 @@ p {
 /** About Section */
 #anna {
     background-image:url("../images/about-block.svg");
-    width: 264px;
-    height: 500px;
+    width: 648px;
+    height: 648px;
 }
 
 #anna:hover {
