@@ -327,7 +327,7 @@ p {
 
 /** About Section */
 #anna {
-    background-image:url("../images/anna.svg");
+    background-image:url("../images/about-block.svg");
     width: 264px;
     height: 500px;
     background-repeat: no-repeat;
@@ -336,7 +336,7 @@ p {
 }
 
 #anna:hover {
-    background-image:url("../images/anna2.svg");
+    background-image:url("../images/about-block2.svg");
 }
 
 .dogs {
