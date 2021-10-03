@@ -321,11 +321,10 @@ p {
 /** About Section */
 #anna {
     background-image:url("../images/anna.svg");
-    width: 248px;
+    width: 264px;
     height: 500px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
 }
 
 #anna:hover {
