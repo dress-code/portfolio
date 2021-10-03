@@ -293,12 +293,17 @@ p {
 }
 
 .itemBlock {
-    width: 164px;
-    height: 236px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.projectBlock {
+    width: 164px;
+    height: 236px;
+}
+
+
 .itemBlock:hover{
     cursor: url("../images/hover_cursor.svg"), auto;
 }
@@ -330,9 +335,6 @@ p {
     background-image:url("../images/about-block.svg");
     width: 264px;
     height: 500px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: 24px;
 }
 
 #anna:hover {
