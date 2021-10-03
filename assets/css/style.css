@@ -332,13 +332,13 @@ p {
 
 /** About Section */
 #anna {
-    background-image:url("../images/about-block.svg");
+    background-image:url("../images/about-block2.svg");
     width: 648px;
     height: 648px;
 }
 
 #anna:hover {
-    background-image:url("../images/about-block2.svg");
+    background-image:url("../images/about-block.svg");
 }
 
 .dogs {
@@ -449,6 +449,14 @@ p {
     
     .bannerImage {
         height: 764px;
+    }
+    
+    #anna {
+        background-image:url("../images/about-block.svg");
+    }
+
+    #anna:hover {
+        background-image:url("../images/about-block2.svg");
     }
 }
 
