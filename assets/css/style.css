@@ -182,11 +182,6 @@ p {
 
 .projectHero {
     width: 100%;
-    height: 516px;
-    background-image: url(../images/mockups/virago_mockup_thumbnail.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 #scrollPrompt {
@@ -406,7 +401,6 @@ p {
     
     .projectHero {
         width: 50%;
-        height: 764px;
     }
     
     .projectCallout, .projectDescription, .projectSectionTitle {
