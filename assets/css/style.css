@@ -209,9 +209,6 @@ p {
 }
 
 /* General Styles -------------------------------- */
-/*.whiteText {
-    color: #FFFFFF;
-}*/
 
 .rightAlign {
     text-align: right;
@@ -334,8 +331,8 @@ p {
 /** About Section */
 #anna {
     background-image:url("../images/about-block2.svg");
-    width: 648px;
-    height: 648px;
+    width: 448px;
+    height: 448px;
 }
 
 #anna:hover {
@@ -413,7 +410,7 @@ p {
     }
     
     .projectCallout, .projectDescription, .projectSectionTitle {
-        width: 75%;
+        width: 50%;
     }
     
     .projectCallout, .projectSectionTitle {
@@ -454,6 +451,8 @@ p {
     
     #anna {
         background-image:url("../images/about-block.svg");
+        width: 648px;
+        height: 648px;
     }
 
     #anna:hover {
