@@ -104,6 +104,7 @@ p {
 
 .projectSection {
     width: 100%;
+    min-height: 100%;
     height: auto;
     display: flex;
     justify-content: center;
