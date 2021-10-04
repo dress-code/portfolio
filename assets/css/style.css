@@ -451,8 +451,6 @@ p {
     
     #anna {
         background-image:url("../images/about-block.svg");
-        width: 648px;
-        height: 648px;
     }
 
     #anna:hover {
@@ -489,6 +487,11 @@ p {
     .itemBlock {
         width: 400px;
         height: 564px;
+    }
+    
+    #anna {
+        width: 648px;
+        height: 648px;
     }
 }
 
