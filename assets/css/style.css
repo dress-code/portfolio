@@ -44,10 +44,11 @@ p {
     background-color: #FBFCFF;
     bottom: 36px;
     width: 264px;
+    padding: 36px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    left: calc(50% - 132px);
+    left: calc(50% - 168px);
     z-index: 99;
 }
 
