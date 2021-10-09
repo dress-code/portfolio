@@ -7,7 +7,6 @@ body {
     background-color: #FBFCFF;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 16px;
-    color: #FBFCFF;
     cursor: url("../images/cursor.svg"), auto;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -42,6 +41,7 @@ p {
 /* Page Controls -------------------------------- */
 .controls {
     position: absolute;
+    background-color: #FBFCFF;
     bottom: 36px;
     width: 264px;
     display: flex;
