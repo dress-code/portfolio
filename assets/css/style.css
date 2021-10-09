@@ -42,9 +42,9 @@ p {
 .controls {
     position: absolute;
     background-color: #FBFCFF;
-    bottom: 36px;
+    bottom: 0px;
     width: 264px;
-    padding: 36px;
+    padding: 24px 36px 64px 36px;
     display: flex;
     align-items: center;
     justify-content: space-between;
