@@ -241,16 +241,18 @@ p {
 }
 
   .tooltiptext > h3 {
-      font-size: 20px;
-      padding-left: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+      padding-left: 8px;
   }
 
   .tooltiptext > h4 {
-      font-size: 16px;
-      font-style: italic;
-      padding-bottom: 4px;
-      padding-left: 4px;
-      font-weight: normal;
+      font-size: 12px;
+    font-style: italic;
+    font-weight: lighter;
+    padding-bottom: 8px;
+    padding-left: 8px;
   }
 
 /* About section ------ */
