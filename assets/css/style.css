@@ -33,6 +33,13 @@ h1 {
     font-weight: bold;
 }
 
+ul > li {
+    font-size: 24px;
+    font-family: 'Barlow', sans-serif;
+    padding: 4px;
+    list-style-type: square;
+}
+
 p {
     padding-bottom: 24px;
 }
