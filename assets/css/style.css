@@ -227,7 +227,6 @@ p {
     height: auto;
     background-color: #FBFCFF;
     color: #000000;
-    padding: 4px;
     position: absolute;
     z-index: 1;
   }
