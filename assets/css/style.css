@@ -438,14 +438,6 @@ p {
         flex-direction: row;
     }
     
-    #scrollPrompt {
-        display: block;
-        top: 90%;
-        position: absolute;
-        opacity: 0;
-        transition: opacity ease .25s;
-    }
-    
     .bannerImage {
         height: 764px;
     }
