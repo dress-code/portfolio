@@ -175,10 +175,27 @@ label {
 }
 
 .teamInformation {
-    height: 76px;
+    height: auto;
     padding: 24px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    background-color: #363945;
+}
+
+.teamInformation > dl {
+    margin: 24px;
+}
+
+.teamInformation > dl > dt {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.teamInformation > dl > dd {
+    font-size: 16px;
+    font-family: 'Barlow';
+    margin-bottom: 8px;
 }
 
 .projectTitle > h1, 
