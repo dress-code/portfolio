@@ -435,7 +435,7 @@ ul > li {
         font-size: 48px;
     }
     
-    .projectDescription {
+    .projectDescription, .projectSection > ul > li {
         font-size: 24px;
     }
     
