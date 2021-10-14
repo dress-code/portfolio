@@ -176,7 +176,7 @@ label {
 
 .teamInformation {
     height: auto;
-    padding: 24px 0;
+    padding-bottom: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
