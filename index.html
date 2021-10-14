@@ -350,16 +350,25 @@ drawings. I also had to keep in mind that I was working within the design system
                     /* If the password is good, open the modal. */
                     console.log("Entered Password: ", localStorage.getItem("enteredPassword"));
                     
-                    if( passwordCheck(localStorage.getItem("enteredPassword")) ){
+                    /*If this is the DSG project, password protect it.*/
+                    if(this.id == "botnine"){
+                        if( passwordCheck(localStorage.getItem("enteredPassword")) ){
+                            $("modalBackground").style.display = "block";
+                            let modalID = this.id + "Modal",
+                            modalToOpen = $(modalID);
+                            modalToOpen.classList.add("currentModal");
+                            modalToOpen.style.display = "block";
+                        } else {
+                            /* Prompt the user for a password */
+                            $("modalBackground").style.display = "block";
+                            $("passwordPrompt").style.display = "flex";
+                        }
+                    } else {
                         $("modalBackground").style.display = "block";
                         let modalID = this.id + "Modal",
                         modalToOpen = $(modalID);
                         modalToOpen.classList.add("currentModal");
                         modalToOpen.style.display = "block";
-                    } else {
-                        /* Prompt the user for a password */
-                        $("modalBackground").style.display = "block";
-                        $("passwordPrompt").style.display = "flex";
                     }
                 });                          
         }//end for loop
