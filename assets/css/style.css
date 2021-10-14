@@ -70,6 +70,23 @@ p {
     z-index: 999;
 }
 
+input[type="text"] {
+    height: 24px;
+    padding: 8px;
+    margin: 24px 24px 24px 0;
+    border: 1px solid #363945;
+}
+
+input[type="submit"]{
+    height: 48px;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #363945;
+}
+
 .enabled {
     cursor: url("../images/hover_cursor.svg"), auto;
 }
