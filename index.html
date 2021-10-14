@@ -37,7 +37,7 @@
     
     <h2 id="scrollPrompt">scroll down</h2>
     
-    <form id="passwordPrompt" onsubmit="passwordSubmission(this)">
+    <form id="passwordPrompt">
         <label for="password">Hmm...you need a password from my resumé to view this.</label>
         <input type="text" name="password" placeholder="Password" />
         <input type="submit"/>
@@ -376,6 +376,10 @@ drawings. I also had to keep in mind that I was working within the design system
             $("passwordPrompt").style.display = "none";
         });
         
+        /* Prevent the password form from refreshing the page. */
+        var form = $("passwordPrompt");
+        form.addEventListener('submit', passwordSubmission);
+        
         /* Make the close button close the modal. ----------- **/
         
         /*$("closeButton").addEventListener("click", function(){
@@ -657,8 +661,10 @@ function SHA256(s){
         return result;
     }
     
-    function passwordSubmission(form){
-        let enteredPassword = form.elements["password"].value,
+    function passwordSubmission(event){
+        event.preventDefault();
+        
+        let enteredPassword = $("passwordPrompt").elements["password"].value,
             result = passwordCheck(enteredPassword);
         
         if(result){
