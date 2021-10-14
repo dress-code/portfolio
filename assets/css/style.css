@@ -134,6 +134,12 @@ p {
     align-items: center;
 }
 
+.teamInfo {
+    height: 64px;
+    width: 100%;
+    background-color: #363945;
+}
+
 .projectTitle > h1, 
 .projectTitle > h2, 
 .projectCallout, 
