@@ -69,7 +69,7 @@ p {
     flex-wrap: wrap;
 }
 
-input[type="text"] {
+input[type="password"] {
     height: 24px;
     padding: 8px;
     margin: 24px 24px 0 0;
