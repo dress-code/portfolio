@@ -61,13 +61,12 @@ p {
     padding: 24px;
     width: 400px;
     position: absolute;
-    top: calc(50% - 200px);
-    left: calc(50% - 200px);
-    background-color: white;
-    justify-content: center;
+    top: calc(50% - 72px);
+    left: calc(50% - 224px);
+    background-color: #FFFFFF;
     align-items: center;
-    flex-wrap: wrap;
     z-index: 999;
+    flex-wrap: wrap;
 }
 
 input[type="text"] {
