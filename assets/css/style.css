@@ -178,6 +178,7 @@ label {
     height: auto;
     padding-bottom: 64px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -489,6 +490,10 @@ ul > li {
     
     .projectCallout, .projectSectionTitle {
         padding: 64px 0;
+    }
+    
+    .teamInformation {
+        flex-direction: row;
     }
     
     .styleguide {
