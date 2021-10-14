@@ -646,7 +646,7 @@ function SHA256(s){
     function passwordCheck(password){
         let enteredHash = SHA256(password),
             result = false;
-        myHash === '01B4727A2BD02AED68967DD35D7A4B2D8466FDADDB2229688C3E5452DA70048E' ? result = true : result = false ;
+        enteredHash === '01B4727A2BD02AED68967DD35D7A4B2D8466FDADDB2229688C3E5452DA70048E' ? result = true : result = false ;
         return result;
     }
 
