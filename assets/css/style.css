@@ -59,6 +59,15 @@ p {
 #passwordPrompt {
     display: none;
     padding: 24px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 200px);
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
 }
 
 .enabled {
