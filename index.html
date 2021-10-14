@@ -358,7 +358,8 @@ drawings. I also had to keep in mind that I was working within the design system
                         modalToOpen.style.display = "block";
                     } else {
                         /* Prompt the user for a password */
-                        $("passwordPrompt").style.display = "block";
+                        $("modalBackground").style.display = "block";
+                        $("passwordPrompt").style.display = "flex";
                     }
                 });                          
         }//end for loop
@@ -371,6 +372,7 @@ drawings. I also had to keep in mind that I was working within the design system
             let currentModal = $$("currentModal")[0];
             currentModal.style.display = "none";
             currentModal.classList.remove("currentModal");
+            $("passwordPrompt").style.display = "none";
         });
         
         /* Make the close button close the modal. ----------- **/
