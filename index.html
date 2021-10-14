@@ -350,7 +350,7 @@ drawings. I also had to keep in mind that I was working within the design system
                     
                     /*If this is the DSG project, password protect it.*/
                     if(this.id == "botnine"){
-                        if( localStorage.getItem("loggedIn") == true ){
+                        if( localStorage.getItem("loggedIn") === "true" ){
                             openModal(this.id);
                         } else {
                             /* Prompt the user for a password */
