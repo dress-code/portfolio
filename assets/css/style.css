@@ -75,6 +75,7 @@ input[type="text"] {
     padding: 8px;
     margin: 24px 24px 24px 0;
     border: 1px solid #363945;
+    cursor: url("../images/hover_cursor.svg"), auto;
 }
 
 input[type="submit"]{
@@ -85,6 +86,7 @@ input[type="submit"]{
     font-size: 16px;
     text-transform: uppercase;
     color: #363945;
+    cursor: url("../images/hover_cursor.svg"), auto;
 }
 
 .enabled {
