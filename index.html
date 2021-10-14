@@ -345,34 +345,20 @@ drawings. I also had to keep in mind that I was working within the design system
             });
             }
             
-            /*Initially set the password local storage to nothing.*/
-            localStorage.setItem("enteredPassword", "null");
-            
                 /** Make the tooltips clickable. **/
                 tooltips[i].addEventListener("click", function(){
                     
-                    /* If the password is good, open the modal. */
-                    console.log("Entered Password: ", localStorage.getItem("enteredPassword"));
-                    
                     /*If this is the DSG project, password protect it.*/
                     if(this.id == "botnine"){
-                        if( passwordCheck(localStorage.getItem("enteredPassword")) ){
-                            $("modalBackground").style.display = "block";
-                            let modalID = this.id + "Modal",
-                            modalToOpen = $(modalID);
-                            modalToOpen.classList.add("currentModal");
-                            modalToOpen.style.display = "block";
+                        if( localStorage.getItem("loggedIn") == true ){
+                            openModal(this.id);
                         } else {
                             /* Prompt the user for a password */
                             $("modalBackground").style.display = "block";
                             $("passwordPrompt").style.display = "flex";
                         }
                     } else {
-                        $("modalBackground").style.display = "block";
-                        let modalID = this.id + "Modal",
-                        modalToOpen = $(modalID);
-                        modalToOpen.classList.add("currentModal");
-                        modalToOpen.style.display = "block";
+                         openModal(this.id);
                     }
                 });                          
         }//end for loop
@@ -676,13 +662,23 @@ function SHA256(s){
             result = passwordCheck(enteredPassword);
         
         if(result){
-            alert('true!');
+            localStorage.setItem("loggedIn", true);
+            $("passwordPrompt").style.display = "none";
+            openModal("botnine");
         }else{
             alert('false');
         }
     }
 
     /* Shortcuts --------------------------------- */
+    function openModal(id){
+        $("modalBackground").style.display = "block";
+        let modalID = id + "Modal",
+        modalToOpen = $(modalID);
+        modalToOpen.classList.add("currentModal");
+        modalToOpen.style.display = "block";
+    }
+    
     function $(id){
         return document.getElementById(id);
     }
