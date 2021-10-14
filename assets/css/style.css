@@ -59,10 +59,10 @@ p {
 #passwordPrompt {
     display: none;
     padding: 24px;
-    width: 400px;
+    width: 300px;
     position: absolute;
     top: calc(50% - 72px);
-    left: calc(50% - 224px);
+    left: calc(50% - 162px);
     background-color: #FFFFFF;
     align-items: center;
     z-index: 999;
@@ -74,8 +74,8 @@ input[type="password"] {
     padding: 8px;
     margin: 24px 24px 0 0;
     border: 1px solid #363945;
-    cursor: url("../images/hover_cursor.svg"), auto;
-    font-size: 20px;
+    cursor: url(../images/hover_cursor.svg), auto;
+    font-size: 18px;
 }
 
 input[type="submit"]{
