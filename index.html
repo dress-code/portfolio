@@ -341,30 +341,26 @@ drawings. I also had to keep in mind that I was working within the design system
             });
             }
             
-            let password = "";
+            /*Initially set the password local storage to nothing.*/
+            localStorage.setItem("enteredPassword", "");
             
-            /* If the password is good, open the modal. */
-            if(passwordCheck(password)){
-                
                 /** Make the tooltips clickable. **/
                 tooltips[i].addEventListener("click", function(){
-                    $("modalBackground").style.display = "block";
-                    let modalID = this.id + "Modal",
-                    modalToOpen = $(modalID);
-                    modalToOpen.classList.add("currentModal");
-                    modalToOpen.style.display = "block";
-                    /* Make the scroll prompt appear after 2 seconds. */
-                    setTimeout(() => {
-                        $("scrollPrompt").style.opacity = 1;
-                    }, 2000);
-                });
-                
-            } else {
-                /* Prompt the user for a password */
-                $("passwordCheck").style.display = "block";
-            }
-            
-                                         
+                    
+                    /* If the password is good, open the modal. */
+                    console.log("Entered Password: ", localStorage.getItem("enteredPassword"));
+                    
+                    if( passwordCheck(localStorage.getItem("enteredPassword")) ){
+                        $("modalBackground").style.display = "block";
+                        let modalID = this.id + "Modal",
+                        modalToOpen = $(modalID);
+                        modalToOpen.classList.add("currentModal");
+                        modalToOpen.style.display = "block";
+                    } else {
+                        /* Prompt the user for a password */
+                        $("passwordPrompt").style.display = "block";
+                    }
+                });                          
         }//end for loop
         
         /** Make the modal close when clicking outside. -- **/
