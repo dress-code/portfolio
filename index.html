@@ -370,8 +370,10 @@ drawings. I also had to keep in mind that I was working within the design system
            this.style.display = "none";
             $("scrollPrompt").style.opacity = 0;
             let currentModal = $$("currentModal")[0];
-            currentModal.style.display = "none";
-            currentModal.classList.remove("currentModal");
+            if(currentModal){  
+                currentModal.style.display = "none";
+                currentModal.classList.remove("currentModal");
+            }
             $("passwordPrompt").style.display = "none";
         });
         
