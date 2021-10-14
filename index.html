@@ -37,10 +37,10 @@
     
     <h2 id="scrollPrompt">scroll down</h2>
     
-    <form id="passwordPrompt">
+    <form id="passwordPrompt" onsubmit="passwordSubmission(this)">
         <label for="password">Hmm...you need a password from my resumé to view this.</label>
         <input type="text" name="password" placeholder="Password" />
-        <input type="submit" onsubmit="passwordSubmission(this)"/>
+        <input type="submit"/>
     </form>
         
     <div id="modalBackground"></div>
@@ -666,6 +666,16 @@ function SHA256(s){
             result = false;
         enteredHash === '01B4727A2BD02AED68967DD35D7A4B2D8466FDADDB2229688C3E5452DA70048E' ? result = true : result = false ;
         return result;
+    }
+    
+    function passwordSubmission(form){
+        let enteredPassword = form.elements["password"].value,
+            result = passwordCheck(enteredPassword);
+        if(result){
+            alert('true!');
+        }else{
+            alert('false');
+        }
     }
 
     /* Shortcuts --------------------------------- */
