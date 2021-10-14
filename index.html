@@ -662,7 +662,7 @@ function SHA256(s){
 }
     
     function passwordCheck(password){
-        let enteredHash = SHA256(password),
+        let enteredHash = SHA256(password).toUpperCase(),
             result = false;
         
         console.log(enteredHash);
