@@ -34,12 +34,7 @@ h1 {
 }
 
 ul > li {
-    font-size: 20px;
-    font-family: 'Barlow', sans-serif;
-    padding: 4px 0;
     list-style-type: square;
-    width: 90%;
-    margin: auto;
 }
 
 p {
@@ -144,7 +139,8 @@ p {
 .projectCallout, 
 .projectDescription, 
 .projectSectionTitle,
-.about > .wrapper > h1 {
+.about > .wrapper > h1,
+ul > li {
     color: #363945;
 }
 
@@ -159,7 +155,7 @@ p {
     font-style: italic;
 }
 
-.projectCallout, .projectDescription, .projectSectionTitle {
+.projectCallout, .projectDescription, .projectSectionTitle, .projectSection > ul > li {
     padding: 12px 0;
     width: 90%;
 }
@@ -173,7 +169,7 @@ p {
     font-size: 24px;
 }
 
-.projectDescription {
+.projectDescription, .projectSection > ul > li {
     font-size: 18px;
     font-weight: normal;
     font-family: 'Barlow', sans-serif;
