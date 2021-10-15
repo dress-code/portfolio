@@ -184,16 +184,16 @@ label {
     width: 100%;
 }
 
-.teamInformation > dl {
+dl {
     margin: 24px;
 }
 
-.teamInformation > dl > dt {
+dl > dt {
     font-size: 24px;
     font-weight: bold;
 }
 
-.teamInformation > dl > dd {
+dl > dd {
     font-size: 16px;
     font-family: 'Barlow';
     margin-bottom: 8px;
