@@ -147,6 +147,10 @@ label {
     z-index: 101;
 }
 
+.contentImg {
+    width: 50%;
+}
+
 .projectSection {
     width: 100%;
     min-height: 100%;
@@ -245,10 +249,6 @@ ul > li {
     vertical-align: middle;
     margin-left: 4px;
     font-weight: bold;
-}
-
-.projectCallout + img {
-    width: 100%
 }
 
 .projectHero {
