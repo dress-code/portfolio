@@ -394,10 +394,10 @@ ul > li {
 }
 
 .virago {
-    background-image: url("../images/projects/virago-box.svg");
+    background-image: url("../images/projects/virago_1.svg");
 }
 .virago:hover {
-    background-image:url("../images/projects/virago-box-color.svg");
+    background-image:url("../images/projects/virago_2.svg");
 }
 
 /** About Section */
