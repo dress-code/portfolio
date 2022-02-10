@@ -379,10 +379,10 @@ ul > li {
 }
 
 .botnine {
-    background-image: url("../images/projects/bot-9-box.svg");
+    background-image: url("../images/projects/bot9_1.svg");
 }
 .botnine:hover {
-    background-image:url("../images/projects/bot-9-box-color.svg");
+    background-image:url("../images/projects/bot9_2.svg");
 }
 
 .mcp {
