@@ -386,11 +386,11 @@ ul > li {
 }
 
 .mcp {
-    background-image: url("../images/projects/biker-box.svg");
+    background-image: url("../images/projects/mcp_1.svg");
     
 }
 .mcp:hover {
-    background-image:url("../images/projects/biker-box-color.svg");
+    background-image:url("../images/projects/mcp_2.svg");
 }
 
 .virago {
