@@ -347,6 +347,9 @@ function adjustDisplay(){
         $("name").style.fontSize = "40px";
         content.style.marginTop = "148px";
 
+        //Position notice banner.
+        $("notice").style.top = "96px"
+
         //Display the nav.
         nav.style.display = "block";
         underline.style.left = navItemDimensions.x + "px";
@@ -358,6 +361,7 @@ function adjustDisplay(){
         $("name").style.fontSize = "32px";
         content.style.marginTop = "120px";
         nav.style.display = "none";
+        $("notice").style.top = "84.5px"
     }
     
     if(currentWidth > 1200 && currentWidth < 1500){
