@@ -3,7 +3,10 @@ colors = ["#9B1402", "#A85910", "#BC9405", "#176041", "#173D60", "#151367", "#42
 
 let filteredBy = [],
 currentImageIndex = 0,
-numCols = 0;
+numCols = 0,
+touchstartX = 0, //touch interactions
+touchendX = 0;
+   
 
 projectInfo = [
     {
@@ -88,14 +91,14 @@ window.onload = () => {
     for (i = 0; i < selectables.length; i++){
        // articles[i].style.backgroundColor = randomColor();
        let selectable = selectables[i];
-       selectable.addEventListener('mouseenter', ()=>{
-        selectable.style.borderColor = "#000000";
-        selectable.style.borderRadius = "80px";
-       });
-       selectable.addEventListener('mouseleave', ()=>{
-        selectable.style.borderColor = "#000000";
-        selectable.style.transition = "border-radius .2s ease";
-        selectable.style.borderRadius = "0px";
+            selectable.addEventListener('mouseenter', ()=>{
+            selectable.style.borderColor = "#000000";
+            selectable.style.borderRadius = "80px";
+        });
+            selectable.addEventListener('mouseleave', ()=>{
+            selectable.style.borderColor = "#000000";
+            selectable.style.transition = "border-radius .2s ease";
+            selectable.style.borderRadius = "0px";
         });
         selectable.addEventListener("click", ()=>{
             project.style.top = "95px";
@@ -115,25 +118,31 @@ window.onload = () => {
                 $("left-arrow").style.opacity = ".2";
                 newText(title, selectedProject.name);
 
+
                 //Populate title and hero image with the image at the current index.
                 heroImage.style.backgroundImage = selectedProject.images[currentImageIndex].url;
 
-                //Display arrows.
-                $("left-arrow").style.display = "block";
-                $("right-arrow").style.display = "block";
+                //Display arrows, if not mobile size.
+                if(document.documentElement.clientWidth >= 868){
+                    $("left-arrow").style.display = "block";
+                    $("right-arrow").style.display = "block";
+                }
 
                 //Display the title and hero image.
                 heroImage.style.display = "block";
                 title.style.display = "block";
 
-                //Update and display the image counter.
+                //Change location of the image counter
+                let imageCounter = $("imageCounter");
+                console.log($("gallery-wrapper").getBoundingClientRect().bottom);
+                imageCounter.style.display = "flex";
+                imageCounter.style.top = $("hero").getBoundingClientRect().bottom - imageCounter.clientHeight - 52 + "px";
                 updateImageCounter(currentImageIndex, selectedProject.images.length);
-                imageCounter.style.top = heroImage.getBoundingClientRect().bottom - imageCounter.clientHeight - 40 + "px";
 
                 //Add event listeners to the gallery arrows.
                 $("left-arrow").addEventListener("click", arrowDecrement);
-
                 $("right-arrow").addEventListener("click", arrowIncrement);
+                
                 
             }
             else if(selectedProject.contentType == "case-study"){
@@ -143,9 +152,19 @@ window.onload = () => {
             }
             
         });
-
     }
 
+    //Add swipe detection to gallery
+    heroImage.addEventListener('touchstart', e => {
+        touchstartX = e.changedTouches[0].screenX
+    })
+      
+    heroImage.addEventListener('touchend', e => {
+        touchendX = e.changedTouches[0].screenX
+        switchImage(selectedProject);
+    })
+
+    //Set the background of modal to close on click.
     background.addEventListener("click", () => {
 
         //Hide everything in the modal.
@@ -170,6 +189,7 @@ window.onload = () => {
         document.body.style.overflowY = "scroll";
     })
 
+    //Set up filtering
     for(i = 0; i < filters.length; i++){
 
         let filter = filters[i];
@@ -213,6 +233,7 @@ window.onload = () => {
         });
     }
 
+    //Run initial display check.
     adjustDisplay();
 }
 
@@ -354,6 +375,7 @@ function adjustDisplay(){
         nav.style.display = "block";
         underline.style.left = navItemDimensions.x + "px";
         underline.style.width = navItemDimensions.right - navItemDimensions.left + "px";
+        
     }else{
         //Don't show the desktop filters.
         $("filter-container").style.display = "none";
@@ -361,7 +383,27 @@ function adjustDisplay(){
         $("name").style.fontSize = "32px";
         content.style.marginTop = "120px";
         nav.style.display = "none";
-        $("notice").style.top = "84.5px"
+        $("notice").style.top = "84.5px";
+
+        //Increase gallery size.
+        let modal = $("project-modal");
+        modal.style.width = document.documentElement.clientWidth - 2 + "px";
+        modal.style.left = "0";
+
+        //Adjust the padding on the title
+        projTitle = $("project-title");
+        projTitle.style.width = document.documentElement.clientWidth - 40 + "px";
+        projTitle.style.padding = "12px 20px";
+
+        //Remove the margin on arrows.
+        let arrows = $$("arrow");
+        for(i = 0; i< arrows.length; i++){
+            arrows[i].style.display = "none";
+        }
+
+        //Change image size to cover
+        $("hero").style.backgroundSize = "cover";
+        $("gallery-wrapper").style.height= "75%";
     }
     
     if(currentWidth > 1200 && currentWidth < 1500){
@@ -397,3 +439,21 @@ function updateImageCounter(index, total){
     let str = (index + 1) + " / " + total;
     newText(imageCounter, str);
 }
+ 
+function switchImage(project) {
+  if (touchendX < touchstartX) {
+    if(currentImageIndex < project.images.length){
+        currentImageIndex++
+        $('hero').style.backgroundImage = project.images[currentImageIndex].url;
+        updateImageCounter(currentImageIndex, project.images.length);
+    }
+  }
+  if (touchendX > touchstartX){
+    if(currentImageIndex > 0){
+        currentImageIndex--
+        $('hero').style.backgroundImage = project.images[currentImageIndex].url;
+        updateImageCounter(currentImageIndex, project.images.length);
+    }
+  }
+}
+

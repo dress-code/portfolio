@@ -7,6 +7,7 @@ body {
     background-color: #FFFDFC;
     font-family: 'Noto Sans', sans-serif;
     font-size: 20px;
+    cursor: url("./assets/images/cursor.svg"), auto;
 }
 
 header {
@@ -77,7 +78,7 @@ nav > ul > li > a {
 nav > ul > li > a:hover, 
 #filters > li:hover {
     color:#2D51D2;
-    cursor: pointer;
+    cursor: url("./assets/images/cursor-hover.svg"), auto;
     transition: color .2s ease;
 }
 
@@ -161,7 +162,7 @@ nav > ul > li > a:hover,
 }
 
 .arrow:hover {
-    cursor: pointer;
+    cursor: url("./assets/images/cursor-hover.svg"), pointer;
 }
 
 #imageCounter {
@@ -229,11 +230,11 @@ main {
     transition: border-color .2s ease, background-color .2s ease, border-radius .4s ease-out;
     border-radius: 72px;
     border-color: #FFFFFF;
-    cursor: pointer;
+    cursor: url("./assets/images/cursor-hover.svg"), auto;
+    transition: cursor .3s ease;
 }
 
 .article:hover {
-    cursor: default;
 }
 
 .article-title, #project-title, .sidebar-title {
