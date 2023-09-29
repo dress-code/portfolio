@@ -19,7 +19,7 @@ header {
     top: 0;
     left: 0;
     background-color: #FFFDFC;
-    border-bottom: 1px #332D29 solid;
+    border-bottom: 1px #C9C9C9 solid;
 }
 
 #resource-icon {
@@ -36,7 +36,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #FFFFFF;
-    border-bottom: 1px #332D29 solid;
+    border-bottom: 1px #C9C9C9 solid;
     position: fixed;
     top: 96px;
     font-size: 12px;
@@ -65,6 +65,7 @@ nav > ul > li {
 nav > ul > li > a {
     text-decoration: none;
     font-family: 'DM Serif Display', serif;
+    font-size: 18px;
 }
 
 .select-underline {
@@ -109,12 +110,13 @@ nav > ul > li > a:hover,
     left: 0;
     width: 148px;
     padding: 20px;
-    border-right: 1px #332D29 solid;
+    border-right: 1px #C9C9C9 solid;
     margin-top: 151px;
 }
 
 #filters >  li {
     padding: 4px 0;
+    margin-top: 8px;
 }
 
 #project-modal-background {
@@ -137,7 +139,7 @@ nav > ul > li > a:hover,
     align-items: center;
     left: 20vw;
     z-index: 3;
-    border: 1px black solid;
+    border: 1px #C9C9C9 solid;
 }
 
 #hero {
@@ -222,7 +224,7 @@ main {
     width: 248px;
     padding: 32px;
     margin: 4px;
-    border: 1px #332D29 solid;
+    border: 1px #C9C9C9 solid;
     /*background-color: #F4F4F4;*/
 }
 
@@ -240,32 +242,35 @@ main {
 .article-title, #project-title, .sidebar-title {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .article-type, #filters > li {
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
-    margin-top: 8px;
+}
+
+.article-type {
+    margin: 4px 0px;
 }
 
 .location {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     margin-right: 12px;
 }
 
 .article-body {
     margin-top: 16px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .deck-link {
     font-weight: 700;
     margin-top: 16px;
     color: #2D51D2;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .disabled {

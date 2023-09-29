@@ -92,11 +92,11 @@ window.onload = () => {
        // articles[i].style.backgroundColor = randomColor();
        let selectable = selectables[i];
             selectable.addEventListener('mouseenter', ()=>{
-            selectable.style.borderColor = "#000000";
+            selectable.style.borderColor = "#2D51D2";
             selectable.style.borderRadius = "80px";
         });
             selectable.addEventListener('mouseleave', ()=>{
-            selectable.style.borderColor = "#000000";
+            selectable.style.borderColor = "#C9C9C9";
             selectable.style.transition = "border-radius .2s ease";
             selectable.style.borderRadius = "0px";
         });
